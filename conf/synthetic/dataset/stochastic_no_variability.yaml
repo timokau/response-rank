@@ -1,0 +1,6 @@
+defaults:
+  - stochastic
+  - _self_
+
+name: "Stochastic No Variability"
+partition_rt_variability: 0.0

@@ -1,0 +1,8 @@
+name: rr_agree_weightdecay0p001
+version: 2
+
+defaults:
+  - rr_agree
+  - _self_
+
+weight_decay: 0.001

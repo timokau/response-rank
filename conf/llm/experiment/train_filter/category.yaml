@@ -1,0 +1,3 @@
+_target_: responserank.llm.data.rank_filter.CategoryFilter
+field_name: subject_study
+field_value: Mathematics

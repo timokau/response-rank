@@ -1,0 +1,11 @@
+_target_: responserank.synthetic.synthetic_data.DriftDiffusionTrialGenerator
+decision_threshold: 1.2
+non_decision_time: 0.3
+drift_rate_multiplier: 1.0
+noise_std: 0.4
+normalize_drift_rate_sd: true
+normalize_drift_rate_mean: false
+drift_rate_variability: 0.0
+starting_point_variability: 0.0
+non_decision_time_variability: 0.0
+dt: 0.001

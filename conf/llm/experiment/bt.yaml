@@ -1,0 +1,12 @@
+name: bt
+version: 3
+
+defaults:
+  - _base
+  - override stratifier: global
+  - override train_partitioner: round_robin_auto
+  - override sampler: random
+  - _self_
+
+baseline: true
+rt_loss_weight: 0.0

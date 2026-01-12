@@ -1,0 +1,21 @@
+defaults:
+  - experiment: ???
+  - _self_
+
+# Random seeds
+seed: 42
+model_seed: null
+
+# Version tracking
+version: 3
+
+# Dry run mode (skip training)
+dry_run: false
+
+wandb:
+  project_base: llm-rt
+
+# Hydra configuration
+hydra:
+  run:
+    dir: ./outputs/llm_rt/${now:%Y-%m-%d}/${now:%H-%M-%S}-${hydra.job.override_dirname}

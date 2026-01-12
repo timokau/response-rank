@@ -1,0 +1,6 @@
+
+_target_: responserank.synthetic.true_utility.FixedNetUtility
+hidden_layers: [64, 64]
+normalize_on_random: false
+emphasize_first_on_random: false
+feature_subset_size: -1

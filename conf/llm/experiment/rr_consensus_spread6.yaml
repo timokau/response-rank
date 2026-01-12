@@ -1,0 +1,7 @@
+name: rr_consensus_spread6
+version: 2
+
+defaults:
+  - rr_consensus
+  - override train_partitioner: round_robin_6
+  - _self_

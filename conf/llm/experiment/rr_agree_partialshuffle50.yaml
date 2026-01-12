@@ -1,0 +1,8 @@
+name: rr_agree_partialshuffle50
+version: 2
+
+defaults:
+  - rr_agree
+  - override train_rank_transform: partial_shuffle_50
+  - override test_rank_transform: no_op
+  - _self_

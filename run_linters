@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+cd "$(dirname "$0")"
+
+fix_mode=false
+for arg in "$@"; do
+  case $arg in
+    --fix)
+      fix_mode=true
+      shift
+      ;;
+  esac
+done
+
+echo "Running linters..."
+if [ "$fix_mode" = true ]; then
+  echo "Fixing issues automatically..."
+  ruff format . && ruff check --fix --unsafe-fixes .
+else
+  echo "Checking format and code style..."
+  ruff format --diff . ; format_code=$?
+  ruff check . ; check_code=$?
+  exit $(( format_code || check_code ))
+fi

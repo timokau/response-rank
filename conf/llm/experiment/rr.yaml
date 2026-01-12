@@ -1,0 +1,8 @@
+name: rr
+version: 1
+
+defaults:
+  - _base
+  - _self_
+
+baseline: false

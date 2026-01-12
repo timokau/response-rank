@@ -1,0 +1,9 @@
+defaults:
+  - /udiff_rt_rel: hyperbolic
+  - _self_
+
+_target_: responserank.synthetic.synthetic_data.StochasticTrialGenerator
+deterministic_choice: false
+deterministic_rt: false
+response_time_sd: 0.4
+choice_temperature: 0.2

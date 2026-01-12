@@ -1,0 +1,6 @@
+defaults:
+  - drift_diffusion
+  - _self_
+
+name: "Drift Diffusion No Variability"
+partition_rt_variability: 0.0

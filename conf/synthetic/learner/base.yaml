@@ -1,0 +1,5 @@
+hidden_layers: [64]
+num_epochs: 200
+learning_rate: 0.001
+l2_reg: 0.01
+permute_response_times: false

@@ -1,0 +1,15 @@
+defaults:
+  - learner: bt  # This will default to loading bt.yaml, but can be overridden
+  - _self_
+
+train_df_file: "train_data.csv"
+test_df_file: "test_data.csv"
+dataset_fraction: 1.0
+
+hydra:
+  job:
+    config:
+      override_dirname:
+        exclude_keys: ["train_df_file", "test_df_file"]
+  run:
+    dir: ./outputs/${hydra.job.name}/${now:%Y-%m-%d}/${now:%H-%M-%S.%f}-${hydra.job.config_name}+${hydra.job.override_dirname}

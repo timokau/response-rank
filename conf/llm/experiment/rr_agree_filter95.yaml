@@ -1,0 +1,9 @@
+name: rr_agree_filter95
+version: 5
+
+defaults:
+  - rr_agree
+  - override train_filter: random_filter_95
+  - _self_
+
+rank_filter_after_fraction_sampling: true

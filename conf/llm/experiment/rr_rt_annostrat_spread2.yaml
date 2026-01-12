@@ -1,0 +1,10 @@
+name: rr_annostrat_spread2
+version: 4
+
+defaults:
+  - rr
+  - override stratifier: annotator
+  - override train_partitioner: round_robin_2
+  - _self_
+
+allow_ties: true

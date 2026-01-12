@@ -1,0 +1,8 @@
+name: rr_agree_bt
+version: 2
+
+defaults:
+  - rr_agree
+  - _self_
+
+rt_loss_weight: 0.0

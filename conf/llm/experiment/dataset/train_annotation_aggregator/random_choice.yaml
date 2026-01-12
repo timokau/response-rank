@@ -1,0 +1,2 @@
+_target_: responserank.llm.data.annotation_aggregator.RandomChoiceAggregator
+bt_target: hard

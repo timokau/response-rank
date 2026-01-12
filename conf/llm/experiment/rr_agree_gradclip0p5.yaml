@@ -1,0 +1,8 @@
+name: rr_agree_gradclip0p5
+version: 2
+
+defaults:
+  - rr_agree
+  - _self_
+
+max_grad_norm: 0.5

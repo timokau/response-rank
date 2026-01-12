@@ -1,0 +1,2 @@
+_target_: responserank.llm.data.partitioner.RandomPartitioner
+partition_size: 4

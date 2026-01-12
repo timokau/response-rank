@@ -1,0 +1,7 @@
+name: rr_agree_slight25
+version: 2
+
+defaults:
+  - rr_agree
+  - override dataset: multipref_tietotal_s25
+  - _self_

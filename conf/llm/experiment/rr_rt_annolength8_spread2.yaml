@@ -1,0 +1,10 @@
+name: rr_rt_annolength8_spread2
+version: 2
+
+defaults:
+  - rr
+  - override stratifier: annotator_length_bucket_8_spread2
+  - override train_partitioner: round_robin_2
+  - _self_
+
+allow_ties: true

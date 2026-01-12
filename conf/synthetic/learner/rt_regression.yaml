@@ -1,0 +1,6 @@
+defaults:
+  - base
+  - /udiff_rt_rel: hyperbolic
+  - _self_
+
+learner_type: "rt"

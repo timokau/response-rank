@@ -1,0 +1,8 @@
+name: bt_acc8
+version: 1
+
+defaults:
+  - bt
+  - _self_
+
+gradient_accumulation_steps: 8

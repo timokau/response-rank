@@ -1,0 +1,7 @@
+defaults:
+  - rr
+  - _self_
+
+learner_type: "rr_stratified"
+use_strata: true
+permute_response_times: true

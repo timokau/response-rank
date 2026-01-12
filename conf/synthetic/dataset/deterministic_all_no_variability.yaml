@@ -1,0 +1,6 @@
+defaults:
+  - deterministic_all
+  - _self_
+
+name: "Deterministic No Variability"
+partition_rt_variability: 0.0

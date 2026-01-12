@@ -1,0 +1,8 @@
+name: rr_agree_gradacc8
+version: 2
+
+defaults:
+  - rr_agree
+  - _self_
+
+gradient_accumulation_steps: 8

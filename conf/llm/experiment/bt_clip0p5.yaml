@@ -1,0 +1,8 @@
+name: bt_clip0p5
+version: 1
+
+defaults:
+  - bt
+  - _self_
+
+max_grad_norm: 0.5

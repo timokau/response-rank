@@ -1,0 +1,8 @@
+name: rr_agree_spread2_partialshuffle75
+version: 3
+
+defaults:
+  - rr_agree_spread2
+  - override train_rank_transform: partial_shuffle_75
+  - override test_rank_transform: no_op
+  - _self_

@@ -1,0 +1,10 @@
+name: rr_agree_spread3
+version: 3
+
+defaults:
+  - rr_agree
+  - override stratifier: global
+  - override train_partitioner: round_robin_3
+  - _self_
+
+allow_ties: true

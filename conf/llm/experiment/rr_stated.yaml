@@ -1,0 +1,12 @@
+name: rr_stated
+version: 4
+
+defaults:
+  - rr
+  - override train_processor: stated_strength
+  - override stratifier: annotator
+  - override train_partitioner: round_robin_auto
+  - _self_
+
+dataset_type: stated_strength
+

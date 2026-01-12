@@ -1,0 +1,8 @@
+name: rr_stated_partialshuffle100
+version: 1
+
+defaults:
+  - rr_stated
+  - override train_rank_transform: partial_shuffle_100
+  - override test_rank_transform: no_op
+  - _self_

@@ -1,0 +1,9 @@
+name: rr_randrank_randsize2
+version: 3
+
+defaults:
+  - rr_agree
+  - override train_rank_transform: random_rank
+  - override stratifier: global
+  - override train_partitioner: random_size_2
+  - _self_

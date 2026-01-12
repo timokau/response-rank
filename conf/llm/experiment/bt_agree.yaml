@@ -1,0 +1,12 @@
+name: bt_agree
+version: 2
+
+defaults:
+  - bt
+  - override dataset: multipref_tietotal
+  - override dataset/train_annotation_aggregator: random_choice
+  - _self_
+
+dataset:
+  train_annotation_aggregator:
+    bt_target: agreement

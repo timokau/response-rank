@@ -1,0 +1,8 @@
+name: rr_agree_lr2em5
+version: 2
+
+defaults:
+  - rr_agree
+  - _self_
+
+learning_rate: 2e-5

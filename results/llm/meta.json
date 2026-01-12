@@ -1,0 +1,1306 @@
+{
+  "experiments": {
+    "bt": {
+      "egid": "bt-v10.2-5cb69cea",
+      "display_name": "BT (baseline)",
+      "color": "#E74C3C",
+      "marker": "^",
+      "linestyle": "--"
+    },
+    "rr_agree": {
+      "egid": "rtrank_agreement-v10.6-576ce977",
+      "display_name": "RR-Agree (ours)",
+      "color": "#8D6E63",
+      "marker": "p",
+      "linestyle": "-"
+    },
+    "rr_stated": {
+      "egid": "rtrank_stated_strength-v10.3-fac86353",
+      "display_name": "RR-Stated",
+      "color": "#8E44AD",
+      "marker": "d",
+      "linestyle": "--"
+    },
+    "rr_rt_annostrat_spread2": {
+      "egid": "rtrank_annostrat_spread2-v10.4-35f3e3b2",
+      "display_name": "RR-RT (annostrat spread2)",
+      "color": "#3498DB",
+      "marker": "v",
+      "linestyle": "-."
+    },
+    "rr_rt_spread2_global": {
+      "egid": "rtrank_rt_spread2_global-v10.2-5d6ae5eb",
+      "display_name": "RR-RT (spread2 global)",
+      "color": "#3498DB",
+      "marker": "d",
+      "linestyle": "-"
+    },
+    "bt_agree": {
+      "egid": "bt_agree-v10.2-444e2c41",
+      "display_name": "BT-Agree",
+      "color": "#E67E22",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_meanpref": {
+      "egid": "bt_meanpref-v10.1-d009051c",
+      "display_name": "BT-MeanPref",
+      "color": "#9B59B6",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_consensus": {
+      "egid": "rtrank_consensus-v10.2-a0e4866d",
+      "display_name": "RR-Consensus",
+      "color": "#27AE60",
+      "marker": "^",
+      "linestyle": "-."
+    },
+    "rr_consensus_spread2": {
+      "egid": "rtrank_consensus_spread2-v10.2-ba2f2d85",
+      "display_name": "RR-Consensus-2",
+      "color": "#229954",
+      "marker": "d",
+      "linestyle": "-."
+    },
+    "rr_consensus_spread4": {
+      "egid": "rtrank_consensus_spread4-v10.2-3644c85f",
+      "display_name": "RR-Consensus-4",
+      "color": "#16A085",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_consensus_spread6": {
+      "egid": "rtrank_consensus_spread6-v10.2-d62cfc76",
+      "display_name": "RR-Consensus-6",
+      "color": "#138D75",
+      "marker": "o",
+      "linestyle": "-."
+    },
+    "rr_randrank_randsize2": {
+      "egid": "rtrank_randrank_randsize2-v10.3-d4c7263b",
+      "display_name": "RR-RandRank",
+      "color": "#95A5A6",
+      "marker": "x",
+      "linestyle": "-"
+    },
+    "rr_randrank_randsize4": {
+      "egid": "rtrank_randrank_randsize4-v10.3-9531db43",
+      "display_name": "RR-RandRank (size4)",
+      "color": "#7F8C8D",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_agree_spread2": {
+      "egid": "rtrank_agreement_spread2-v10.3-1c362150",
+      "display_name": "RR-Agree (spread2)",
+      "color": "#1D9A6C",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rr_agree_spread3": {
+      "egid": "rtrank_agreement_spread3-v10.3-a6a86d5c",
+      "display_name": "RR-Agree (spread3)",
+      "color": "#1D9A6C",
+      "marker": "d",
+      "linestyle": ":"
+    },
+    "rr_agree_spread4": {
+      "egid": "rtrank_agreement_spread4-v10.3-fd38f5cf",
+      "display_name": "RR-Agree (spread4)",
+      "color": "#1D9A6C",
+      "marker": "s",
+      "linestyle": ":"
+    },
+    "rr_agree_slight25": {
+      "egid": "rtrank_agreement_tietotal_s25-v10.1-ed6e616e",
+      "display_name": "RR-Agree (tie s25)",
+      "color": "#A1887F",
+      "marker": "*",
+      "linestyle": ":"
+    },
+    "rr_agree_slight75": {
+      "egid": "rtrank_agreement_tietotal_s75-v10.1-9071b81e",
+      "display_name": "RR-Agree (tie s75)",
+      "color": "#BCAAA4",
+      "marker": "X",
+      "linestyle": "--"
+    },
+    "rr_agree_partialshuffle25": {
+      "egid": "rtrank_agreement_partialshuffle25-v10.2-745d7d68",
+      "display_name": "RR-Agree (partialshuffle25)",
+      "color": "#F39C12",
+      "marker": "^",
+      "linestyle": "--"
+    },
+    "rr_agree_partialshuffle50": {
+      "egid": "rtrank_agreement_partialshuffle50-v10.2-e5492837",
+      "display_name": "RR-Agree (partialshuffle50)",
+      "color": "#2980B9",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_agree_partialshuffle75": {
+      "egid": "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9",
+      "display_name": "RR-Agree (partialshuffle75)",
+      "color": "#8E44AD",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_agree_partialshuffle100": {
+      "egid": "rtrank_agreement_partialshuffle100-v10.2-eae2311b",
+      "display_name": "RR-Agree (partialshuffle100)",
+      "color": "#8E44AD",
+      "marker": "d",
+      "linestyle": "--"
+    },
+    "rr_agree_spread2_partialshuffle25": {
+      "egid": "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313",
+      "display_name": "RR-Agree (spread2-PS25)",
+      "color": "#F39C12",
+      "marker": "^",
+      "linestyle": "--"
+    },
+    "rr_agree_spread2_partialshuffle50": {
+      "egid": "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312",
+      "display_name": "RR-Agree (spread2-PS50)",
+      "color": "#16A085",
+      "marker": "o",
+      "linestyle": "--"
+    },
+    "rr_agree_spread2_partialshuffle75": {
+      "egid": "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10",
+      "display_name": "RR-Agree (spread2-PS75)",
+      "color": "#8E44AD",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_agree_spread2_partialshuffle100": {
+      "egid": "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727",
+      "display_name": "RR-Agree (spread2-PS100)",
+      "color": "#C0392B",
+      "marker": "d",
+      "linestyle": ":"
+    },
+    "rr_agree_filter25": {
+      "egid": "rtrank_agreement_filter25-v10.5-4cacda53",
+      "display_name": "RR-Agree (filter25)",
+      "color": "#D32F2F",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rr_agree_filter50": {
+      "egid": "rtrank_agreement_filter50-v10.5-5126382b",
+      "display_name": "RR-Agree (filter50)",
+      "color": "#F39C12",
+      "marker": "^",
+      "linestyle": "--"
+    },
+    "rr_agree_filter75": {
+      "egid": "rtrank_agreement_filter75-v10.5-70705f0c",
+      "display_name": "RR-Agree (filter75)",
+      "color": "#2980B9",
+      "marker": "d",
+      "linestyle": ":-"
+    },
+    "rr_agree_filter95": {
+      "egid": "rtrank_agreement_filter95-v10.5-516d4960",
+      "display_name": "RR-Agree (filter95)",
+      "color": "#8E44AD",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_rt_annolength2_spread2": {
+      "egid": "rtrank_annolength2_spread2-v10.1-c24ee3cd",
+      "display_name": "RR-RT (2 buckets spread2)",
+      "color": "#3498DB",
+      "marker": "o",
+      "linestyle": "--"
+    },
+    "rr_rt_annolength4_spread2": {
+      "egid": "rtrank_annolength4_spread2-v10.1-e5ea2d05",
+      "display_name": "RR-RT (4 buckets spread2)",
+      "color": "#3498DB",
+      "marker": "s",
+      "linestyle": ":"
+    },
+    "rr_rt_annolength8_spread2": {
+      "egid": "rtrank_annolength8_spread2-v10.1-5f173ae5",
+      "display_name": "RR-RT (8 buckets spread2)",
+      "color": "#3498DB",
+      "marker": "^",
+      "linestyle": "-."
+    },
+    "rr_rt_annolength16_spread2": {
+      "egid": "rtrank_annolength16_spread2-v10.1-fc32147c",
+      "display_name": "RR-RT (16 buckets spread2)",
+      "color": "#3498DB",
+      "marker": "h",
+      "linestyle": "-"
+    },
+    "rr_rt_annolength32_spread2": {
+      "egid": "rtrank_annolength32_spread2-v10.1-e0bf80a9",
+      "display_name": "RR-RT (32 buckets spread2)",
+      "color": "#3498DB",
+      "marker": "p",
+      "linestyle": "--"
+    },
+    "rr_stated_global": {
+      "egid": "rtrank_stated_strength_global-v10.4-5b95755b",
+      "display_name": "RR-Stated (global)",
+      "color": "#E67E22",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rr_stated_partialshuffle100": {
+      "egid": "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd",
+      "display_name": "RR-Stated (partialshuffle100)",
+      "color": "#3498DB",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_lr1em5": {
+      "egid": "bt_lr1e5-v10.1-0afb7e78",
+      "display_name": "BT (lr=1e-5)",
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_lr2em5": {
+      "egid": "bt_lr2e5-v10.1-40c0405b",
+      "display_name": "BT (lr=2e-5)",
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_agree_lr1em5": {
+      "egid": "rtrank_agreement_lr_1em5-v10.2-1ed11deb",
+      "display_name": "RR-Agree (lr=1e-5)",
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rr_agree_lr2em5": {
+      "egid": "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f",
+      "display_name": "RR-Agree (lr=2e-5)",
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_acc2": {
+      "egid": "bt_acc2-v10.1-b78de359",
+      "display_name": "BT (acc=2)",
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_acc8": {
+      "egid": "bt_acc8-v10.1-756266a1",
+      "display_name": "BT (acc=8)",
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_agree_gradacc2": {
+      "egid": "rtrank_agreement_acc2-v10.2-5bd313d1",
+      "display_name": "RR-Agree (acc=2)",
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rr_agree_gradacc8": {
+      "egid": "rtrank_agreement_acc8-v10.2-facbecbb",
+      "display_name": "RR-Agree (acc=8)",
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_clip0p5": {
+      "egid": "bt_clip05-v10.1-b5a25ed2",
+      "display_name": "BT (clip=0.5)",
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_clip2p0": {
+      "egid": "bt_clip20-v10.1-d368fe6a",
+      "display_name": "BT (clip=2.0)",
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_agree_gradclip0p5": {
+      "egid": "rtrank_agreement_clip_0_5-v10.2-8403e6e0",
+      "display_name": "RR-Agree (clip=0.5)",
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rr_agree_gradclip2p0": {
+      "egid": "rtrank_agreement_clip_2_0-v10.2-9e7f2fea",
+      "display_name": "RR-Agree (clip=2.0)",
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_ep2": {
+      "egid": "bt_ep2-v10.1-ae983be4",
+      "display_name": "BT (epochs=2)",
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_ep4": {
+      "egid": "bt_ep4-v10.1-70b6b19d",
+      "display_name": "BT (epochs=4)",
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_agree_ep2": {
+      "egid": "rtrank_agreement_ep2-v10.2-dac2a7b9",
+      "display_name": "RR-Agree (epochs=2)",
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rr_agree_ep4": {
+      "egid": "rtrank_agreement_ep4-v10.2-500eeacc",
+      "display_name": "RR-Agree (epochs=4)",
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_warmup0p01": {
+      "egid": "bt_warmup01-v10.1-af555059",
+      "display_name": "BT (warmup=0.01)",
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_warmup0p1": {
+      "egid": "bt_warmup10-v10.1-ef9900ee",
+      "display_name": "BT (warmup=0.1)",
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rr_agree_warmup0p01": {
+      "egid": "rtrank_agreement_warmup_0_01-v10.2-e82c87b5",
+      "display_name": "RR-Agree (warmup=0.01)",
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rr_agree_warmup0p1": {
+      "egid": "rtrank_agreement_warmup_0_1-v10.2-2af0b919",
+      "display_name": "RR-Agree (warmup=0.1)",
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_wd0p001": {
+      "egid": "bt_wd001-v10.1-cf9e1e23",
+      "display_name": "BT (wd=0.001)",
+      "color": "#C62828",
+      "marker": "s",
+      "linestyle": ":"
+    },
+    "rr_agree_weightdecay0p001": {
+      "egid": "rtrank_agreement_wd_0_001-v10.2-d5e608ec",
+      "display_name": "RR-Agree (wd=0.001)",
+      "color": "#1B5E20",
+      "marker": "s",
+      "linestyle": ":"
+    },
+    "rr_agree_bt": {
+      "egid": "rtrank_agreement_bt-v10.2-6fc2178c",
+      "display_name": "RR-Agree-BT",
+      "color": "#95A5A6",
+      "marker": "s",
+      "linestyle": ":"
+    }
+  },
+  "experiment_specs": {
+    "egid_patterns": [
+      "bt-v10.2-5cb69cea",
+      "bt_acc2-v10.1-b78de359",
+      "bt_acc8-v10.1-756266a1",
+      "bt_agree-v10.2-444e2c41",
+      "bt_clip05-v10.1-b5a25ed2",
+      "bt_clip20-v10.1-d368fe6a",
+      "bt_ep2-v10.1-ae983be4",
+      "bt_ep4-v10.1-70b6b19d",
+      "bt_lr1e5-v10.1-0afb7e78",
+      "bt_lr2e5-v10.1-40c0405b",
+      "bt_meanpref-v10.1-d009051c",
+      "bt_warmup01-v10.1-af555059",
+      "bt_warmup10-v10.1-ef9900ee",
+      "bt_wd001-v10.1-cf9e1e23",
+      "rtrank_agreement-v10.6-576ce977",
+      "rtrank_agreement_acc2-v10.2-5bd313d1",
+      "rtrank_agreement_acc8-v10.2-facbecbb",
+      "rtrank_agreement_bt-v10.2-6fc2178c",
+      "rtrank_agreement_clip_0_5-v10.2-8403e6e0",
+      "rtrank_agreement_clip_2_0-v10.2-9e7f2fea",
+      "rtrank_agreement_ep2-v10.2-dac2a7b9",
+      "rtrank_agreement_ep4-v10.2-500eeacc",
+      "rtrank_agreement_filter25-v10.5-4cacda53",
+      "rtrank_agreement_filter50-v10.5-5126382b",
+      "rtrank_agreement_filter75-v10.5-70705f0c",
+      "rtrank_agreement_filter95-v10.5-516d4960",
+      "rtrank_agreement_lr_1em5-v10.2-1ed11deb",
+      "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f",
+      "rtrank_agreement_partialshuffle100-v10.2-eae2311b",
+      "rtrank_agreement_partialshuffle25-v10.2-745d7d68",
+      "rtrank_agreement_partialshuffle50-v10.2-e5492837",
+      "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9",
+      "rtrank_agreement_spread2-v10.3-1c362150",
+      "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727",
+      "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313",
+      "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312",
+      "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10",
+      "rtrank_agreement_spread3-v10.3-a6a86d5c",
+      "rtrank_agreement_spread4-v10.3-fd38f5cf",
+      "rtrank_agreement_tietotal_s25-v10.1-ed6e616e",
+      "rtrank_agreement_tietotal_s75-v10.1-9071b81e",
+      "rtrank_agreement_warmup_0_01-v10.2-e82c87b5",
+      "rtrank_agreement_warmup_0_1-v10.2-2af0b919",
+      "rtrank_agreement_wd_0_001-v10.2-d5e608ec",
+      "rtrank_annolength16_spread2-v10.1-fc32147c",
+      "rtrank_annolength2_spread2-v10.1-c24ee3cd",
+      "rtrank_annolength32_spread2-v10.1-e0bf80a9",
+      "rtrank_annolength4_spread2-v10.1-e5ea2d05",
+      "rtrank_annolength8_spread2-v10.1-5f173ae5",
+      "rtrank_annostrat_spread2-v10.4-35f3e3b2",
+      "rtrank_consensus-v10.2-a0e4866d",
+      "rtrank_consensus_spread2-v10.2-ba2f2d85",
+      "rtrank_consensus_spread4-v10.2-3644c85f",
+      "rtrank_consensus_spread6-v10.2-d62cfc76",
+      "rtrank_randrank_randsize2-v10.3-d4c7263b",
+      "rtrank_randrank_randsize4-v10.3-9531db43",
+      "rtrank_rt_spread2_global-v10.2-5d6ae5eb",
+      "rtrank_stated_strength-v10.3-fac86353",
+      "rtrank_stated_strength_global-v10.4-5b95755b",
+      "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd"
+    ]
+  },
+  "styling": {
+    "bt-v10.2-5cb69cea": {
+      "color": "#E74C3C",
+      "marker": "^",
+      "linestyle": "--"
+    },
+    "rtrank_agreement-v10.6-576ce977": {
+      "color": "#8D6E63",
+      "marker": "p",
+      "linestyle": "-"
+    },
+    "rtrank_stated_strength-v10.3-fac86353": {
+      "color": "#8E44AD",
+      "marker": "d",
+      "linestyle": "--"
+    },
+    "rtrank_annostrat_spread2-v10.4-35f3e3b2": {
+      "color": "#3498DB",
+      "marker": "v",
+      "linestyle": "-."
+    },
+    "rtrank_rt_spread2_global-v10.2-5d6ae5eb": {
+      "color": "#3498DB",
+      "marker": "d",
+      "linestyle": "-"
+    },
+    "bt_agree-v10.2-444e2c41": {
+      "color": "#E67E22",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_meanpref-v10.1-d009051c": {
+      "color": "#9B59B6",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_consensus-v10.2-a0e4866d": {
+      "color": "#27AE60",
+      "marker": "^",
+      "linestyle": "-."
+    },
+    "rtrank_consensus_spread2-v10.2-ba2f2d85": {
+      "color": "#229954",
+      "marker": "d",
+      "linestyle": "-."
+    },
+    "rtrank_consensus_spread4-v10.2-3644c85f": {
+      "color": "#16A085",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_consensus_spread6-v10.2-d62cfc76": {
+      "color": "#138D75",
+      "marker": "o",
+      "linestyle": "-."
+    },
+    "rtrank_randrank_randsize2-v10.3-d4c7263b": {
+      "color": "#95A5A6",
+      "marker": "x",
+      "linestyle": "-"
+    },
+    "rtrank_randrank_randsize4-v10.3-9531db43": {
+      "color": "#7F8C8D",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_agreement_spread2-v10.3-1c362150": {
+      "color": "#1D9A6C",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_spread3-v10.3-a6a86d5c": {
+      "color": "#1D9A6C",
+      "marker": "d",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_spread4-v10.3-fd38f5cf": {
+      "color": "#1D9A6C",
+      "marker": "s",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_tietotal_s25-v10.1-ed6e616e": {
+      "color": "#A1887F",
+      "marker": "*",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_tietotal_s75-v10.1-9071b81e": {
+      "color": "#BCAAA4",
+      "marker": "X",
+      "linestyle": "--"
+    },
+    "rtrank_agreement_partialshuffle25-v10.2-745d7d68": {
+      "color": "#F39C12",
+      "marker": "^",
+      "linestyle": "--"
+    },
+    "rtrank_agreement_partialshuffle50-v10.2-e5492837": {
+      "color": "#2980B9",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9": {
+      "color": "#8E44AD",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_agreement_partialshuffle100-v10.2-eae2311b": {
+      "color": "#8E44AD",
+      "marker": "d",
+      "linestyle": "--"
+    },
+    "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313": {
+      "color": "#F39C12",
+      "marker": "^",
+      "linestyle": "--"
+    },
+    "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312": {
+      "color": "#16A085",
+      "marker": "o",
+      "linestyle": "--"
+    },
+    "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10": {
+      "color": "#8E44AD",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727": {
+      "color": "#C0392B",
+      "marker": "d",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_filter25-v10.5-4cacda53": {
+      "color": "#D32F2F",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_filter50-v10.5-5126382b": {
+      "color": "#F39C12",
+      "marker": "^",
+      "linestyle": "--"
+    },
+    "rtrank_agreement_filter75-v10.5-70705f0c": {
+      "color": "#2980B9",
+      "marker": "d",
+      "linestyle": ":-"
+    },
+    "rtrank_agreement_filter95-v10.5-516d4960": {
+      "color": "#8E44AD",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_annolength2_spread2-v10.1-c24ee3cd": {
+      "color": "#3498DB",
+      "marker": "o",
+      "linestyle": "--"
+    },
+    "rtrank_annolength4_spread2-v10.1-e5ea2d05": {
+      "color": "#3498DB",
+      "marker": "s",
+      "linestyle": ":"
+    },
+    "rtrank_annolength8_spread2-v10.1-5f173ae5": {
+      "color": "#3498DB",
+      "marker": "^",
+      "linestyle": "-."
+    },
+    "rtrank_annolength16_spread2-v10.1-fc32147c": {
+      "color": "#3498DB",
+      "marker": "h",
+      "linestyle": "-"
+    },
+    "rtrank_annolength32_spread2-v10.1-e0bf80a9": {
+      "color": "#3498DB",
+      "marker": "p",
+      "linestyle": "--"
+    },
+    "rtrank_stated_strength_global-v10.4-5b95755b": {
+      "color": "#E67E22",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd": {
+      "color": "#3498DB",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_lr1e5-v10.1-0afb7e78": {
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_lr2e5-v10.1-40c0405b": {
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_agreement_lr_1em5-v10.2-1ed11deb": {
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f": {
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_acc2-v10.1-b78de359": {
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_acc8-v10.1-756266a1": {
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_agreement_acc2-v10.2-5bd313d1": {
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_acc8-v10.2-facbecbb": {
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_clip05-v10.1-b5a25ed2": {
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_clip20-v10.1-d368fe6a": {
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_agreement_clip_0_5-v10.2-8403e6e0": {
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_clip_2_0-v10.2-9e7f2fea": {
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_ep2-v10.1-ae983be4": {
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_ep4-v10.1-70b6b19d": {
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_agreement_ep2-v10.2-dac2a7b9": {
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_ep4-v10.2-500eeacc": {
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_warmup01-v10.1-af555059": {
+      "color": "#C0392B",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "bt_warmup10-v10.1-ef9900ee": {
+      "color": "#A93226",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "rtrank_agreement_warmup_0_01-v10.2-e82c87b5": {
+      "color": "#148F77",
+      "marker": "o",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_warmup_0_1-v10.2-2af0b919": {
+      "color": "#117A65",
+      "marker": "s",
+      "linestyle": "-."
+    },
+    "bt_wd001-v10.1-cf9e1e23": {
+      "color": "#C62828",
+      "marker": "s",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_wd_0_001-v10.2-d5e608ec": {
+      "color": "#1B5E20",
+      "marker": "s",
+      "linestyle": ":"
+    },
+    "rtrank_agreement_bt-v10.2-6fc2178c": {
+      "color": "#95A5A6",
+      "marker": "s",
+      "linestyle": ":"
+    }
+  },
+  "computed_styling": {
+    "run_colors": {
+      "bt-v10.2-5cb69cea": "#E74C3C",
+      "bt_acc2-v10.1-b78de359": "#C0392B",
+      "bt_acc8-v10.1-756266a1": "#A93226",
+      "bt_agree-v10.2-444e2c41": "#E67E22",
+      "bt_clip05-v10.1-b5a25ed2": "#C0392B",
+      "bt_clip20-v10.1-d368fe6a": "#A93226",
+      "bt_ep2-v10.1-ae983be4": "#C0392B",
+      "bt_ep4-v10.1-70b6b19d": "#A93226",
+      "bt_lr1e5-v10.1-0afb7e78": "#C0392B",
+      "bt_lr2e5-v10.1-40c0405b": "#A93226",
+      "bt_meanpref-v10.1-d009051c": "#9B59B6",
+      "bt_warmup01-v10.1-af555059": "#C0392B",
+      "bt_warmup10-v10.1-ef9900ee": "#A93226",
+      "bt_wd001-v10.1-cf9e1e23": "#C62828",
+      "rtrank_agreement-v10.6-576ce977": "#8D6E63",
+      "rtrank_agreement_acc2-v10.2-5bd313d1": "#148F77",
+      "rtrank_agreement_acc8-v10.2-facbecbb": "#117A65",
+      "rtrank_agreement_bt-v10.2-6fc2178c": "#95A5A6",
+      "rtrank_agreement_clip_0_5-v10.2-8403e6e0": "#148F77",
+      "rtrank_agreement_clip_2_0-v10.2-9e7f2fea": "#117A65",
+      "rtrank_agreement_ep2-v10.2-dac2a7b9": "#148F77",
+      "rtrank_agreement_ep4-v10.2-500eeacc": "#117A65",
+      "rtrank_agreement_filter25-v10.5-4cacda53": "#D32F2F",
+      "rtrank_agreement_filter50-v10.5-5126382b": "#F39C12",
+      "rtrank_agreement_filter75-v10.5-70705f0c": "#2980B9",
+      "rtrank_agreement_filter95-v10.5-516d4960": "#8E44AD",
+      "rtrank_agreement_lr_1em5-v10.2-1ed11deb": "#148F77",
+      "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f": "#117A65",
+      "rtrank_agreement_partialshuffle100-v10.2-eae2311b": "#8E44AD",
+      "rtrank_agreement_partialshuffle25-v10.2-745d7d68": "#F39C12",
+      "rtrank_agreement_partialshuffle50-v10.2-e5492837": "#2980B9",
+      "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9": "#8E44AD",
+      "rtrank_agreement_spread2-v10.3-1c362150": "#1D9A6C",
+      "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727": "#C0392B",
+      "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313": "#F39C12",
+      "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312": "#16A085",
+      "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10": "#8E44AD",
+      "rtrank_agreement_spread3-v10.3-a6a86d5c": "#1D9A6C",
+      "rtrank_agreement_spread4-v10.3-fd38f5cf": "#1D9A6C",
+      "rtrank_agreement_tietotal_s25-v10.1-ed6e616e": "#A1887F",
+      "rtrank_agreement_tietotal_s75-v10.1-9071b81e": "#BCAAA4",
+      "rtrank_agreement_warmup_0_01-v10.2-e82c87b5": "#148F77",
+      "rtrank_agreement_warmup_0_1-v10.2-2af0b919": "#117A65",
+      "rtrank_agreement_wd_0_001-v10.2-d5e608ec": "#1B5E20",
+      "rtrank_annolength16_spread2-v10.1-fc32147c": "#3498DB",
+      "rtrank_annolength2_spread2-v10.1-c24ee3cd": "#3498DB",
+      "rtrank_annolength32_spread2-v10.1-e0bf80a9": "#3498DB",
+      "rtrank_annolength4_spread2-v10.1-e5ea2d05": "#3498DB",
+      "rtrank_annolength8_spread2-v10.1-5f173ae5": "#3498DB",
+      "rtrank_annostrat_spread2-v10.4-35f3e3b2": "#3498DB",
+      "rtrank_consensus-v10.2-a0e4866d": "#27AE60",
+      "rtrank_consensus_spread2-v10.2-ba2f2d85": "#229954",
+      "rtrank_consensus_spread4-v10.2-3644c85f": "#16A085",
+      "rtrank_consensus_spread6-v10.2-d62cfc76": "#138D75",
+      "rtrank_randrank_randsize2-v10.3-d4c7263b": "#95A5A6",
+      "rtrank_randrank_randsize4-v10.3-9531db43": "#7F8C8D",
+      "rtrank_rt_spread2_global-v10.2-5d6ae5eb": "#3498DB",
+      "rtrank_stated_strength-v10.3-fac86353": "#8E44AD",
+      "rtrank_stated_strength_global-v10.4-5b95755b": "#E67E22",
+      "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd": "#3498DB"
+    },
+    "run_markers": {
+      "bt-v10.2-5cb69cea": "^",
+      "bt_acc2-v10.1-b78de359": "o",
+      "bt_acc8-v10.1-756266a1": "s",
+      "bt_agree-v10.2-444e2c41": "o",
+      "bt_clip05-v10.1-b5a25ed2": "o",
+      "bt_clip20-v10.1-d368fe6a": "s",
+      "bt_ep2-v10.1-ae983be4": "o",
+      "bt_ep4-v10.1-70b6b19d": "s",
+      "bt_lr1e5-v10.1-0afb7e78": "o",
+      "bt_lr2e5-v10.1-40c0405b": "s",
+      "bt_meanpref-v10.1-d009051c": "s",
+      "bt_warmup01-v10.1-af555059": "o",
+      "bt_warmup10-v10.1-ef9900ee": "s",
+      "bt_wd001-v10.1-cf9e1e23": "s",
+      "rtrank_agreement-v10.6-576ce977": "p",
+      "rtrank_agreement_acc2-v10.2-5bd313d1": "o",
+      "rtrank_agreement_acc8-v10.2-facbecbb": "s",
+      "rtrank_agreement_bt-v10.2-6fc2178c": "s",
+      "rtrank_agreement_clip_0_5-v10.2-8403e6e0": "o",
+      "rtrank_agreement_clip_2_0-v10.2-9e7f2fea": "s",
+      "rtrank_agreement_ep2-v10.2-dac2a7b9": "o",
+      "rtrank_agreement_ep4-v10.2-500eeacc": "s",
+      "rtrank_agreement_filter25-v10.5-4cacda53": "o",
+      "rtrank_agreement_filter50-v10.5-5126382b": "^",
+      "rtrank_agreement_filter75-v10.5-70705f0c": "d",
+      "rtrank_agreement_filter95-v10.5-516d4960": "s",
+      "rtrank_agreement_lr_1em5-v10.2-1ed11deb": "o",
+      "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f": "s",
+      "rtrank_agreement_partialshuffle100-v10.2-eae2311b": "d",
+      "rtrank_agreement_partialshuffle25-v10.2-745d7d68": "^",
+      "rtrank_agreement_partialshuffle50-v10.2-e5492837": "s",
+      "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9": "s",
+      "rtrank_agreement_spread2-v10.3-1c362150": "o",
+      "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727": "d",
+      "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313": "^",
+      "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312": "o",
+      "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10": "s",
+      "rtrank_agreement_spread3-v10.3-a6a86d5c": "d",
+      "rtrank_agreement_spread4-v10.3-fd38f5cf": "s",
+      "rtrank_agreement_tietotal_s25-v10.1-ed6e616e": "*",
+      "rtrank_agreement_tietotal_s75-v10.1-9071b81e": "X",
+      "rtrank_agreement_warmup_0_01-v10.2-e82c87b5": "o",
+      "rtrank_agreement_warmup_0_1-v10.2-2af0b919": "s",
+      "rtrank_agreement_wd_0_001-v10.2-d5e608ec": "s",
+      "rtrank_annolength16_spread2-v10.1-fc32147c": "h",
+      "rtrank_annolength2_spread2-v10.1-c24ee3cd": "o",
+      "rtrank_annolength32_spread2-v10.1-e0bf80a9": "p",
+      "rtrank_annolength4_spread2-v10.1-e5ea2d05": "s",
+      "rtrank_annolength8_spread2-v10.1-5f173ae5": "^",
+      "rtrank_annostrat_spread2-v10.4-35f3e3b2": "v",
+      "rtrank_consensus-v10.2-a0e4866d": "^",
+      "rtrank_consensus_spread2-v10.2-ba2f2d85": "d",
+      "rtrank_consensus_spread4-v10.2-3644c85f": "s",
+      "rtrank_consensus_spread6-v10.2-d62cfc76": "o",
+      "rtrank_randrank_randsize2-v10.3-d4c7263b": "x",
+      "rtrank_randrank_randsize4-v10.3-9531db43": "s",
+      "rtrank_rt_spread2_global-v10.2-5d6ae5eb": "d",
+      "rtrank_stated_strength-v10.3-fac86353": "d",
+      "rtrank_stated_strength_global-v10.4-5b95755b": "o",
+      "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd": "s"
+    },
+    "run_linestyles": {
+      "bt-v10.2-5cb69cea": "--",
+      "bt_acc2-v10.1-b78de359": ":",
+      "bt_acc8-v10.1-756266a1": "-.",
+      "bt_agree-v10.2-444e2c41": ":",
+      "bt_clip05-v10.1-b5a25ed2": ":",
+      "bt_clip20-v10.1-d368fe6a": "-.",
+      "bt_ep2-v10.1-ae983be4": ":",
+      "bt_ep4-v10.1-70b6b19d": "-.",
+      "bt_lr1e5-v10.1-0afb7e78": ":",
+      "bt_lr2e5-v10.1-40c0405b": "-.",
+      "bt_meanpref-v10.1-d009051c": "-.",
+      "bt_warmup01-v10.1-af555059": ":",
+      "bt_warmup10-v10.1-ef9900ee": "-.",
+      "bt_wd001-v10.1-cf9e1e23": ":",
+      "rtrank_agreement-v10.6-576ce977": "-",
+      "rtrank_agreement_acc2-v10.2-5bd313d1": ":",
+      "rtrank_agreement_acc8-v10.2-facbecbb": "-.",
+      "rtrank_agreement_bt-v10.2-6fc2178c": ":",
+      "rtrank_agreement_clip_0_5-v10.2-8403e6e0": ":",
+      "rtrank_agreement_clip_2_0-v10.2-9e7f2fea": "-.",
+      "rtrank_agreement_ep2-v10.2-dac2a7b9": ":",
+      "rtrank_agreement_ep4-v10.2-500eeacc": "-.",
+      "rtrank_agreement_filter25-v10.5-4cacda53": ":",
+      "rtrank_agreement_filter50-v10.5-5126382b": "--",
+      "rtrank_agreement_filter75-v10.5-70705f0c": ":-",
+      "rtrank_agreement_filter95-v10.5-516d4960": "-.",
+      "rtrank_agreement_lr_1em5-v10.2-1ed11deb": ":",
+      "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f": "-.",
+      "rtrank_agreement_partialshuffle100-v10.2-eae2311b": "--",
+      "rtrank_agreement_partialshuffle25-v10.2-745d7d68": "--",
+      "rtrank_agreement_partialshuffle50-v10.2-e5492837": "-.",
+      "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9": "-.",
+      "rtrank_agreement_spread2-v10.3-1c362150": ":",
+      "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727": ":",
+      "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313": "--",
+      "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312": "--",
+      "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10": "-.",
+      "rtrank_agreement_spread3-v10.3-a6a86d5c": ":",
+      "rtrank_agreement_spread4-v10.3-fd38f5cf": ":",
+      "rtrank_agreement_tietotal_s25-v10.1-ed6e616e": ":",
+      "rtrank_agreement_tietotal_s75-v10.1-9071b81e": "--",
+      "rtrank_agreement_warmup_0_01-v10.2-e82c87b5": ":",
+      "rtrank_agreement_warmup_0_1-v10.2-2af0b919": "-.",
+      "rtrank_agreement_wd_0_001-v10.2-d5e608ec": ":",
+      "rtrank_annolength16_spread2-v10.1-fc32147c": "-",
+      "rtrank_annolength2_spread2-v10.1-c24ee3cd": "--",
+      "rtrank_annolength32_spread2-v10.1-e0bf80a9": "--",
+      "rtrank_annolength4_spread2-v10.1-e5ea2d05": ":",
+      "rtrank_annolength8_spread2-v10.1-5f173ae5": "-.",
+      "rtrank_annostrat_spread2-v10.4-35f3e3b2": "-.",
+      "rtrank_consensus-v10.2-a0e4866d": "-.",
+      "rtrank_consensus_spread2-v10.2-ba2f2d85": "-.",
+      "rtrank_consensus_spread4-v10.2-3644c85f": "-.",
+      "rtrank_consensus_spread6-v10.2-d62cfc76": "-.",
+      "rtrank_randrank_randsize2-v10.3-d4c7263b": "-",
+      "rtrank_randrank_randsize4-v10.3-9531db43": "-.",
+      "rtrank_rt_spread2_global-v10.2-5d6ae5eb": "-",
+      "rtrank_stated_strength-v10.3-fac86353": "--",
+      "rtrank_stated_strength_global-v10.4-5b95755b": ":",
+      "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd": "-."
+    }
+  },
+  "display_name_overrides": {
+    "bt-v10.2-5cb69cea": "BT (baseline)",
+    "rtrank_agreement-v10.6-576ce977": "RR-Agree (ours)",
+    "rtrank_stated_strength-v10.3-fac86353": "RR-Stated",
+    "rtrank_annostrat_spread2-v10.4-35f3e3b2": "RR-RT (annostrat spread2)",
+    "rtrank_rt_spread2_global-v10.2-5d6ae5eb": "RR-RT (spread2 global)",
+    "bt_agree-v10.2-444e2c41": "BT-Agree",
+    "bt_meanpref-v10.1-d009051c": "BT-MeanPref",
+    "rtrank_consensus-v10.2-a0e4866d": "RR-Consensus",
+    "rtrank_consensus_spread2-v10.2-ba2f2d85": "RR-Consensus-2",
+    "rtrank_consensus_spread4-v10.2-3644c85f": "RR-Consensus-4",
+    "rtrank_consensus_spread6-v10.2-d62cfc76": "RR-Consensus-6",
+    "rtrank_randrank_randsize2-v10.3-d4c7263b": "RR-RandRank",
+    "rtrank_randrank_randsize4-v10.3-9531db43": "RR-RandRank (size4)",
+    "rtrank_agreement_spread2-v10.3-1c362150": "RR-Agree (spread2)",
+    "rtrank_agreement_spread3-v10.3-a6a86d5c": "RR-Agree (spread3)",
+    "rtrank_agreement_spread4-v10.3-fd38f5cf": "RR-Agree (spread4)",
+    "rtrank_agreement_tietotal_s25-v10.1-ed6e616e": "RR-Agree (tie s25)",
+    "rtrank_agreement_tietotal_s75-v10.1-9071b81e": "RR-Agree (tie s75)",
+    "rtrank_agreement_partialshuffle25-v10.2-745d7d68": "RR-Agree (partialshuffle25)",
+    "rtrank_agreement_partialshuffle50-v10.2-e5492837": "RR-Agree (partialshuffle50)",
+    "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9": "RR-Agree (partialshuffle75)",
+    "rtrank_agreement_partialshuffle100-v10.2-eae2311b": "RR-Agree (partialshuffle100)",
+    "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313": "RR-Agree (spread2-PS25)",
+    "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312": "RR-Agree (spread2-PS50)",
+    "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10": "RR-Agree (spread2-PS75)",
+    "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727": "RR-Agree (spread2-PS100)",
+    "rtrank_agreement_filter25-v10.5-4cacda53": "RR-Agree (filter25)",
+    "rtrank_agreement_filter50-v10.5-5126382b": "RR-Agree (filter50)",
+    "rtrank_agreement_filter75-v10.5-70705f0c": "RR-Agree (filter75)",
+    "rtrank_agreement_filter95-v10.5-516d4960": "RR-Agree (filter95)",
+    "rtrank_annolength2_spread2-v10.1-c24ee3cd": "RR-RT (2 buckets spread2)",
+    "rtrank_annolength4_spread2-v10.1-e5ea2d05": "RR-RT (4 buckets spread2)",
+    "rtrank_annolength8_spread2-v10.1-5f173ae5": "RR-RT (8 buckets spread2)",
+    "rtrank_annolength16_spread2-v10.1-fc32147c": "RR-RT (16 buckets spread2)",
+    "rtrank_annolength32_spread2-v10.1-e0bf80a9": "RR-RT (32 buckets spread2)",
+    "rtrank_stated_strength_global-v10.4-5b95755b": "RR-Stated (global)",
+    "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd": "RR-Stated (partialshuffle100)",
+    "bt_lr1e5-v10.1-0afb7e78": "BT (lr=1e-5)",
+    "bt_lr2e5-v10.1-40c0405b": "BT (lr=2e-5)",
+    "rtrank_agreement_lr_1em5-v10.2-1ed11deb": "RR-Agree (lr=1e-5)",
+    "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f": "RR-Agree (lr=2e-5)",
+    "bt_acc2-v10.1-b78de359": "BT (acc=2)",
+    "bt_acc8-v10.1-756266a1": "BT (acc=8)",
+    "rtrank_agreement_acc2-v10.2-5bd313d1": "RR-Agree (acc=2)",
+    "rtrank_agreement_acc8-v10.2-facbecbb": "RR-Agree (acc=8)",
+    "bt_clip05-v10.1-b5a25ed2": "BT (clip=0.5)",
+    "bt_clip20-v10.1-d368fe6a": "BT (clip=2.0)",
+    "rtrank_agreement_clip_0_5-v10.2-8403e6e0": "RR-Agree (clip=0.5)",
+    "rtrank_agreement_clip_2_0-v10.2-9e7f2fea": "RR-Agree (clip=2.0)",
+    "bt_ep2-v10.1-ae983be4": "BT (epochs=2)",
+    "bt_ep4-v10.1-70b6b19d": "BT (epochs=4)",
+    "rtrank_agreement_ep2-v10.2-dac2a7b9": "RR-Agree (epochs=2)",
+    "rtrank_agreement_ep4-v10.2-500eeacc": "RR-Agree (epochs=4)",
+    "bt_warmup01-v10.1-af555059": "BT (warmup=0.01)",
+    "bt_warmup10-v10.1-ef9900ee": "BT (warmup=0.1)",
+    "rtrank_agreement_warmup_0_01-v10.2-e82c87b5": "RR-Agree (warmup=0.01)",
+    "rtrank_agreement_warmup_0_1-v10.2-2af0b919": "RR-Agree (warmup=0.1)",
+    "bt_wd001-v10.1-cf9e1e23": "BT (wd=0.001)",
+    "rtrank_agreement_wd_0_001-v10.2-d5e608ec": "RR-Agree (wd=0.001)",
+    "rtrank_agreement_bt-v10.2-6fc2178c": "RR-Agree-BT"
+  },
+  "computed_display_names": {
+    "bt-v10.2-5cb69cea": "BT (baseline)",
+    "bt_acc2-v10.1-b78de359": "BT (acc=2)",
+    "bt_acc8-v10.1-756266a1": "BT (acc=8)",
+    "bt_agree-v10.2-444e2c41": "BT-Agree",
+    "bt_clip05-v10.1-b5a25ed2": "BT (clip=0.5)",
+    "bt_clip20-v10.1-d368fe6a": "BT (clip=2.0)",
+    "bt_ep2-v10.1-ae983be4": "BT (epochs=2)",
+    "bt_ep4-v10.1-70b6b19d": "BT (epochs=4)",
+    "bt_lr1e5-v10.1-0afb7e78": "BT (lr=1e-5)",
+    "bt_lr2e5-v10.1-40c0405b": "BT (lr=2e-5)",
+    "bt_meanpref-v10.1-d009051c": "BT-MeanPref",
+    "bt_warmup01-v10.1-af555059": "BT (warmup=0.01)",
+    "bt_warmup10-v10.1-ef9900ee": "BT (warmup=0.1)",
+    "bt_wd001-v10.1-cf9e1e23": "BT (wd=0.001)",
+    "rtrank_agreement-v10.6-576ce977": "RR-Agree (ours)",
+    "rtrank_agreement_acc2-v10.2-5bd313d1": "RR-Agree (acc=2)",
+    "rtrank_agreement_acc8-v10.2-facbecbb": "RR-Agree (acc=8)",
+    "rtrank_agreement_bt-v10.2-6fc2178c": "RR-Agree-BT",
+    "rtrank_agreement_clip_0_5-v10.2-8403e6e0": "RR-Agree (clip=0.5)",
+    "rtrank_agreement_clip_2_0-v10.2-9e7f2fea": "RR-Agree (clip=2.0)",
+    "rtrank_agreement_ep2-v10.2-dac2a7b9": "RR-Agree (epochs=2)",
+    "rtrank_agreement_ep4-v10.2-500eeacc": "RR-Agree (epochs=4)",
+    "rtrank_agreement_filter25-v10.5-4cacda53": "RR-Agree (filter25)",
+    "rtrank_agreement_filter50-v10.5-5126382b": "RR-Agree (filter50)",
+    "rtrank_agreement_filter75-v10.5-70705f0c": "RR-Agree (filter75)",
+    "rtrank_agreement_filter95-v10.5-516d4960": "RR-Agree (filter95)",
+    "rtrank_agreement_lr_1em5-v10.2-1ed11deb": "RR-Agree (lr=1e-5)",
+    "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f": "RR-Agree (lr=2e-5)",
+    "rtrank_agreement_partialshuffle100-v10.2-eae2311b": "RR-Agree (partialshuffle100)",
+    "rtrank_agreement_partialshuffle25-v10.2-745d7d68": "RR-Agree (partialshuffle25)",
+    "rtrank_agreement_partialshuffle50-v10.2-e5492837": "RR-Agree (partialshuffle50)",
+    "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9": "RR-Agree (partialshuffle75)",
+    "rtrank_agreement_spread2-v10.3-1c362150": "RR-Agree (spread2)",
+    "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727": "RR-Agree (spread2-PS100)",
+    "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313": "RR-Agree (spread2-PS25)",
+    "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312": "RR-Agree (spread2-PS50)",
+    "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10": "RR-Agree (spread2-PS75)",
+    "rtrank_agreement_spread3-v10.3-a6a86d5c": "RR-Agree (spread3)",
+    "rtrank_agreement_spread4-v10.3-fd38f5cf": "RR-Agree (spread4)",
+    "rtrank_agreement_tietotal_s25-v10.1-ed6e616e": "RR-Agree (tie s25)",
+    "rtrank_agreement_tietotal_s75-v10.1-9071b81e": "RR-Agree (tie s75)",
+    "rtrank_agreement_warmup_0_01-v10.2-e82c87b5": "RR-Agree (warmup=0.01)",
+    "rtrank_agreement_warmup_0_1-v10.2-2af0b919": "RR-Agree (warmup=0.1)",
+    "rtrank_agreement_wd_0_001-v10.2-d5e608ec": "RR-Agree (wd=0.001)",
+    "rtrank_annolength16_spread2-v10.1-fc32147c": "RR-RT (16 buckets spread2)",
+    "rtrank_annolength2_spread2-v10.1-c24ee3cd": "RR-RT (2 buckets spread2)",
+    "rtrank_annolength32_spread2-v10.1-e0bf80a9": "RR-RT (32 buckets spread2)",
+    "rtrank_annolength4_spread2-v10.1-e5ea2d05": "RR-RT (4 buckets spread2)",
+    "rtrank_annolength8_spread2-v10.1-5f173ae5": "RR-RT (8 buckets spread2)",
+    "rtrank_annostrat_spread2-v10.4-35f3e3b2": "RR-RT (annostrat spread2)",
+    "rtrank_consensus-v10.2-a0e4866d": "RR-Consensus",
+    "rtrank_consensus_spread2-v10.2-ba2f2d85": "RR-Consensus-2",
+    "rtrank_consensus_spread4-v10.2-3644c85f": "RR-Consensus-4",
+    "rtrank_consensus_spread6-v10.2-d62cfc76": "RR-Consensus-6",
+    "rtrank_randrank_randsize2-v10.3-d4c7263b": "RR-RandRank",
+    "rtrank_randrank_randsize4-v10.3-9531db43": "RR-RandRank (size4)",
+    "rtrank_rt_spread2_global-v10.2-5d6ae5eb": "RR-RT (spread2 global)",
+    "rtrank_stated_strength-v10.3-fac86353": "RR-Stated",
+    "rtrank_stated_strength_global-v10.4-5b95755b": "RR-Stated (global)",
+    "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd": "RR-Stated (partialshuffle100)"
+  },
+  "data_summary": {
+    "unique_egids": [
+      "bt-v10.2-5cb69cea",
+      "bt_acc2-v10.1-b78de359",
+      "bt_acc8-v10.1-756266a1",
+      "bt_agree-v10.2-444e2c41",
+      "bt_clip05-v10.1-b5a25ed2",
+      "bt_clip20-v10.1-d368fe6a",
+      "bt_ep2-v10.1-ae983be4",
+      "bt_ep4-v10.1-70b6b19d",
+      "bt_lr1e5-v10.1-0afb7e78",
+      "bt_lr2e5-v10.1-40c0405b",
+      "bt_meanpref-v10.1-d009051c",
+      "bt_warmup01-v10.1-af555059",
+      "bt_warmup10-v10.1-ef9900ee",
+      "bt_wd001-v10.1-cf9e1e23",
+      "rtrank_agreement-v10.6-576ce977",
+      "rtrank_agreement_acc2-v10.2-5bd313d1",
+      "rtrank_agreement_acc8-v10.2-facbecbb",
+      "rtrank_agreement_bt-v10.2-6fc2178c",
+      "rtrank_agreement_clip_0_5-v10.2-8403e6e0",
+      "rtrank_agreement_clip_2_0-v10.2-9e7f2fea",
+      "rtrank_agreement_ep2-v10.2-dac2a7b9",
+      "rtrank_agreement_ep4-v10.2-500eeacc",
+      "rtrank_agreement_filter25-v10.5-4cacda53",
+      "rtrank_agreement_filter50-v10.5-5126382b",
+      "rtrank_agreement_filter75-v10.5-70705f0c",
+      "rtrank_agreement_filter95-v10.5-516d4960",
+      "rtrank_agreement_lr_1em5-v10.2-1ed11deb",
+      "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f",
+      "rtrank_agreement_partialshuffle100-v10.2-eae2311b",
+      "rtrank_agreement_partialshuffle25-v10.2-745d7d68",
+      "rtrank_agreement_partialshuffle50-v10.2-e5492837",
+      "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9",
+      "rtrank_agreement_spread2-v10.3-1c362150",
+      "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727",
+      "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313",
+      "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312",
+      "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10",
+      "rtrank_agreement_spread3-v10.3-a6a86d5c",
+      "rtrank_agreement_spread4-v10.3-fd38f5cf",
+      "rtrank_agreement_tietotal_s25-v10.1-ed6e616e",
+      "rtrank_agreement_tietotal_s75-v10.1-9071b81e",
+      "rtrank_agreement_warmup_0_01-v10.2-e82c87b5",
+      "rtrank_agreement_warmup_0_1-v10.2-2af0b919",
+      "rtrank_agreement_wd_0_001-v10.2-d5e608ec",
+      "rtrank_annolength16_spread2-v10.1-fc32147c",
+      "rtrank_annolength2_spread2-v10.1-c24ee3cd",
+      "rtrank_annolength32_spread2-v10.1-e0bf80a9",
+      "rtrank_annolength4_spread2-v10.1-e5ea2d05",
+      "rtrank_annolength8_spread2-v10.1-5f173ae5",
+      "rtrank_annostrat_spread2-v10.4-35f3e3b2",
+      "rtrank_consensus-v10.2-a0e4866d",
+      "rtrank_consensus_spread2-v10.2-ba2f2d85",
+      "rtrank_consensus_spread4-v10.2-3644c85f",
+      "rtrank_consensus_spread6-v10.2-d62cfc76",
+      "rtrank_randrank_randsize2-v10.3-d4c7263b",
+      "rtrank_randrank_randsize4-v10.3-9531db43",
+      "rtrank_rt_spread2_global-v10.2-5d6ae5eb",
+      "rtrank_stated_strength-v10.3-fac86353",
+      "rtrank_stated_strength_global-v10.4-5b95755b",
+      "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd"
+    ],
+    "unique_display_names": [
+      "bt-v10.2-5cb69cea (final)",
+      "bt_acc2-v10.1-b78de359 (final)",
+      "bt_acc8-v10.1-756266a1 (final)",
+      "bt_agree-v10.2-444e2c41 (final)",
+      "bt_clip05-v10.1-b5a25ed2 (final)",
+      "bt_clip20-v10.1-d368fe6a (final)",
+      "bt_ep2-v10.1-ae983be4 (final)",
+      "bt_ep4-v10.1-70b6b19d (final)",
+      "bt_lr1e5-v10.1-0afb7e78 (final)",
+      "bt_lr2e5-v10.1-40c0405b (final)",
+      "bt_meanpref-v10.1-d009051c (final)",
+      "bt_warmup01-v10.1-af555059 (final)",
+      "bt_warmup10-v10.1-ef9900ee (final)",
+      "bt_wd001-v10.1-cf9e1e23 (final)",
+      "rtrank_agreement-v10.6-576ce977 (final)",
+      "rtrank_agreement_acc2-v10.2-5bd313d1 (final)",
+      "rtrank_agreement_acc8-v10.2-facbecbb (final)",
+      "rtrank_agreement_bt-v10.2-6fc2178c (final)",
+      "rtrank_agreement_clip_0_5-v10.2-8403e6e0 (final)",
+      "rtrank_agreement_clip_2_0-v10.2-9e7f2fea (final)",
+      "rtrank_agreement_ep2-v10.2-dac2a7b9 (final)",
+      "rtrank_agreement_ep4-v10.2-500eeacc (final)",
+      "rtrank_agreement_filter25-v10.5-4cacda53 (final)",
+      "rtrank_agreement_filter50-v10.5-5126382b (final)",
+      "rtrank_agreement_filter75-v10.5-70705f0c (final)",
+      "rtrank_agreement_filter95-v10.5-516d4960 (final)",
+      "rtrank_agreement_lr_1em5-v10.2-1ed11deb (final)",
+      "rtrank_agreement_lr_2em5-v10.2-6ceb7b5f (final)",
+      "rtrank_agreement_partialshuffle100-v10.2-eae2311b (final)",
+      "rtrank_agreement_partialshuffle25-v10.2-745d7d68 (final)",
+      "rtrank_agreement_partialshuffle50-v10.2-e5492837 (final)",
+      "rtrank_agreement_partialshuffle75-v10.2-7cf7fae9 (final)",
+      "rtrank_agreement_spread2-v10.3-1c362150 (final)",
+      "rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727 (final)",
+      "rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313 (final)",
+      "rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312 (final)",
+      "rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10 (final)",
+      "rtrank_agreement_spread3-v10.3-a6a86d5c (final)",
+      "rtrank_agreement_spread4-v10.3-fd38f5cf (final)",
+      "rtrank_agreement_tietotal_s25-v10.1-ed6e616e (final)",
+      "rtrank_agreement_tietotal_s75-v10.1-9071b81e (final)",
+      "rtrank_agreement_warmup_0_01-v10.2-e82c87b5 (final)",
+      "rtrank_agreement_warmup_0_1-v10.2-2af0b919 (final)",
+      "rtrank_agreement_wd_0_001-v10.2-d5e608ec (final)",
+      "rtrank_annolength16_spread2-v10.1-fc32147c (final)",
+      "rtrank_annolength2_spread2-v10.1-c24ee3cd (final)",
+      "rtrank_annolength32_spread2-v10.1-e0bf80a9 (final)",
+      "rtrank_annolength4_spread2-v10.1-e5ea2d05 (final)",
+      "rtrank_annolength8_spread2-v10.1-5f173ae5 (final)",
+      "rtrank_annostrat_spread2-v10.4-35f3e3b2 (final)",
+      "rtrank_consensus-v10.2-a0e4866d (final)",
+      "rtrank_consensus_spread2-v10.2-ba2f2d85 (final)",
+      "rtrank_consensus_spread4-v10.2-3644c85f (final)",
+      "rtrank_consensus_spread6-v10.2-d62cfc76 (final)",
+      "rtrank_randrank_randsize2-v10.3-d4c7263b (final)",
+      "rtrank_randrank_randsize4-v10.3-9531db43 (final)",
+      "rtrank_rt_spread2_global-v10.2-5d6ae5eb (final)",
+      "rtrank_stated_strength-v10.3-fac86353 (final)",
+      "rtrank_stated_strength_global-v10.4-5b95755b (final)",
+      "rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd (final)"
+    ],
+    "seeds": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "fractions": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "columns": [
+      "run_id",
+      "run_name",
+      "egid",
+      "experiment_name",
+      "seed",
+      "fraction",
+      "run_state",
+      "display_name",
+      "eval_accuracy",
+      "eval/rewardbench_v1/overall/accuracy_score",
+      "eval/rewardbench_v2/overall/accuracy_score",
+      "train_examples",
+      "test_examples",
+      "non_singleton_fraction",
+      "avg_fragment_size",
+      "eval/rewardbench_v2/section/Factuality_score",
+      "eval/rewardbench_v2/section/Focus_score",
+      "eval/rewardbench_v2/section/Math_score",
+      "eval/rewardbench_v2/section/Precise IF_score",
+      "eval/rewardbench_v2/section/Safety_score",
+      "eval/rewardbench_v2/section/Ties_score"
+    ],
+    "metrics_available": [
+      "eval_accuracy",
+      "eval/rewardbench_v1/overall/accuracy_score",
+      "eval/rewardbench_v2/overall/accuracy_score",
+      "eval/rewardbench_v2/section/Factuality_score",
+      "eval/rewardbench_v2/section/Focus_score",
+      "eval/rewardbench_v2/section/Math_score",
+      "eval/rewardbench_v2/section/Precise IF_score",
+      "eval/rewardbench_v2/section/Safety_score",
+      "eval/rewardbench_v2/section/Ties_score"
+    ]
+  }
+}

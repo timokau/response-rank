@@ -1,0 +1,11 @@
+name: rr_agree
+version: 6
+
+defaults:
+  - rr
+  - override train_processor: agreement
+  - override stratifier: global_split_ties
+  - override train_partitioner: round_robin_auto
+  - override dataset: multipref_tietotal
+  - _self_
+

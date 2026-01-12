@@ -1,0 +1,2 @@
+_target_: responserank.llm.data.rank_filter.RandomFilter
+filter_fraction: 0.25

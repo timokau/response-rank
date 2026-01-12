@@ -1,0 +1,8 @@
+name: bt_wd0p001
+version: 1
+
+defaults:
+  - bt
+  - _self_
+
+weight_decay: 0.001

@@ -1,0 +1,8 @@
+name: rr_agree_ep4
+version: 2
+
+defaults:
+  - rr_agree
+  - _self_
+
+epochs: 4

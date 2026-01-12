@@ -1,0 +1,10 @@
+name: rr_rt_spread2_global
+version: 2
+
+defaults:
+  - rr
+  - override stratifier: global
+  - override train_partitioner: round_robin_2
+  - _self_
+
+allow_ties: true

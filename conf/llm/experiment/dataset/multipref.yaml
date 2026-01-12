@@ -1,0 +1,9 @@
+_target_: responserank.llm.data.datasets.multipref.MultiPrefDataset
+
+ties_in_agreement_total: false
+slight_preference_value: 0.5
+
+defaults:
+  - train_annotation_aggregator: random_choice
+  - test_annotation_aggregator: multipref_binarized
+  - _self_

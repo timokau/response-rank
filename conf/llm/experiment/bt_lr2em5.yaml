@@ -1,0 +1,8 @@
+name: bt_lr2em5
+version: 1
+
+defaults:
+  - bt
+  - _self_
+
+learning_rate: 2e-5

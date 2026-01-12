@@ -1,0 +1,7 @@
+defaults:
+  - base
+  - _self_
+
+learner_type: "bt"
+disable_rt_loss_misclassified: false
+disable_choice_loss_correctly_classified: false

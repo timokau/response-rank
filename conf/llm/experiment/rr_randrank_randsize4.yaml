@@ -1,0 +1,7 @@
+name: rr_randrank_randsize4
+version: 3
+
+defaults:
+  - rr_randrank_randsize2
+  - override train_partitioner: random_size_4
+  - _self_

@@ -1,0 +1,72 @@
+name: ???
+base_version: 10
+version: ???
+
+# Data configuration
+fraction: 1.0
+test_size: 2000
+dataset_type: real_rt
+force_prepare: false
+
+# Model configuration
+model_name: meta-llama/Llama-3.1-8B-Instruct
+
+# Training configuration
+epochs: 3
+batch_size: 16
+gradient_accumulation_steps: 4
+learning_rate: 15e-6
+lr_scheduler_type: linear
+disable_dropout: true
+center_rewards_coefficient: null
+warmup_ratio: 0.05
+logging_steps: 10
+eval_strategy: epoch
+gradient_checkpointing: true
+bf16: true
+save_strategy: "no"
+eval_on_start: false
+max_length: 1024  # TRL default
+accumulation_aware_scaling: true
+
+# Optimizer configuration
+max_grad_norm: 1.0
+weight_decay: 0.1
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_epsilon: 1e-08
+
+# Common RT settings
+shuffle_ranks: false
+invert_ranks: false
+rank_filter_after_fraction_sampling: true
+# Slightly misnamed. Divides batch loss by number of batch items. Similar to
+# mean aggregation in BT. Note that, as rr loss can be decomposed into sum
+# of BT losses plus ranking components, the ranking components are also divided
+# by batch size.
+divide_by_len: true
+allow_ties: false
+
+# Tie filtering configuration
+filter_ties_before_aggregation: false
+filter_ties_after_aggregation: true
+
+# RewardBench evaluation settings
+eval_on_rewardbench_v1: true
+rewardbenchv1_filter_max_len: false
+
+
+
+defaults:
+  - dataset: multipref
+  - stratifier: std_max2
+  - train_processor: real_rt
+  - test_processor: no_rank
+  - train_filter: noop
+  - test_filter: noop
+  - train_partitioner: noop
+  - test_partitioner: noop
+  - sampler: fixed_size
+  - dataset_sampler: annotator
+  - train_rank_transform: no_op
+  - test_rank_transform: no_op

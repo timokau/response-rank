@@ -1,0 +1,3 @@
+_target_: responserank.synthetic.synthetic_data.GaussianItemGenerator
+num_features: 20
+utility_sd: 1.0

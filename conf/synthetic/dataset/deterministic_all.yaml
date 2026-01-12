@@ -1,0 +1,11 @@
+defaults:
+  - trial_generator: deterministic
+  - item_generator: uniform
+  - /true_utility: fixed_net_utility
+  - _self_
+
+name: "Deterministic"
+num_train_samples: 50
+num_test_samples: 200
+num_partitions: 5
+partition_rt_variability: 3.0

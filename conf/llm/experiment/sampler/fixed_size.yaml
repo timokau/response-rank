@@ -1,0 +1,5 @@
+_target_: responserank.llm.sampler.base.FixedSizeSampler
+drop_last: false
+
+defaults:
+  - packer: largest_first_best_fit

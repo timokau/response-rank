@@ -1,0 +1,6 @@
+defaults:
+  - rr
+  - _self_
+
+learner_type: "rr_pooled"
+use_strata: false

@@ -1,0 +1,5 @@
+defaults:
+  - rt_regression
+  - _self_
+
+permute_response_times: true

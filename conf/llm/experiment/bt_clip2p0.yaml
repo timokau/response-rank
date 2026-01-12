@@ -1,0 +1,8 @@
+name: bt_clip2p0
+version: 1
+
+defaults:
+  - bt
+  - _self_
+
+max_grad_norm: 2.0

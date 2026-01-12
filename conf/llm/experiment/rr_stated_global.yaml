@@ -1,0 +1,8 @@
+name: rr_stated_global
+version: 4
+
+defaults:
+  - rr_stated
+  - override stratifier: global_split_ties
+  - override train_partitioner: round_robin_auto
+  - _self_

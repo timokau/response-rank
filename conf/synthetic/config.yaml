@@ -1,0 +1,30 @@
+# @package _global_
+
+# We're stretching Hydra's intended use case here with a two-level config setup:
+# the experiment runner gets everything and passes pieces down to learners and
+# dataset generators running in separate processes.
+
+# Example for command-line overrides:
+# Adding a learner under a different name, removing it under the original name: experiment_runner +learner@learners.x=rt_all ~learners.rt_all
+# Changing the configuration of a particular learner: experiment_runner learners.bt.num_epochs=100
+defaults:
+  - learner@learners.bt: bt
+  - learner@learners.rt_regression: rt_regression
+  - learner@learners.rt_regression_perm: rt_regression_perm
+  - learner@learners.rr: rr
+  - learner@learners.rr_pooled: rr_pooled
+  - learner@learners.rr_perm: rr_perm
+  - dataset: deterministic_all
+  - execution_backend: process
+  - _self_
+
+num_trials: 100
+random_seed: 42 # Each trial dataset is generated with a distinct derived seed
+version: 2 # For experiment tracking
+dataset_sizes: [0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+
+output_dir: ${hydra:runtime.output_dir}
+
+hydra:
+  run:
+    dir: ./outputs/${hydra.job.name}/${now:%Y-%m-%d}/${now:%H-%M-%S}-${hydra.job.config_name}v${version}+${hydra.job.override_dirname}

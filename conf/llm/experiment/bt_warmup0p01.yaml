@@ -1,0 +1,8 @@
+name: bt_warmup0p01
+version: 1
+
+defaults:
+  - bt
+  - _self_
+
+warmup_ratio: 0.01

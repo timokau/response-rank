@@ -1,0 +1,447 @@
+# Experiments used in plots
+#
+# Each experiment has:
+#   egid: Experiment group ID (changes when config changes)
+#   display_name: Human-readable name for plots
+#   color: Hex color code
+#   marker: Matplotlib marker style
+#   linestyle: Matplotlib line style
+
+experiments:
+  # === Baseline & Primary Results ===
+  bt:
+    egid: bt-v10.2-5cb69cea
+    display_name: BT (baseline)
+    color: '#E74C3C'
+    marker: ^
+    linestyle: '--'
+
+  rr_agree:
+    egid: rtrank_agreement-v10.6-576ce977
+    display_name: RR-Agree (ours)
+    color: '#8D6E63'
+    marker: p
+    linestyle: '-'
+
+  # === Response Time Variants ===
+  rr_stated:
+    egid: rtrank_stated_strength-v10.3-fac86353
+    display_name: RR-Stated
+    color: '#8E44AD'
+    marker: d
+    linestyle: '--'
+
+  rr_rt_annostrat_spread2:
+    egid: rtrank_annostrat_spread2-v10.4-35f3e3b2
+    display_name: RR-RT (annostrat spread2)
+    color: '#3498DB'
+    marker: v
+    linestyle: '-.'
+
+  rr_rt_spread2_global:
+    egid: rtrank_rt_spread2_global-v10.2-5d6ae5eb
+    display_name: RR-RT (spread2 global)
+    color: '#3498DB'
+    marker: d
+    linestyle: '-'
+
+  # === Soft Labels & Consensus ===
+  bt_agree:
+    egid: bt_agree-v10.2-444e2c41
+    display_name: BT-Agree
+    color: '#E67E22'
+    marker: o
+    linestyle: ':'
+
+  bt_meanpref:
+    egid: bt_meanpref-v10.1-d009051c
+    display_name: BT-MeanPref
+    color: '#9B59B6'
+    marker: s
+    linestyle: '-.'
+
+  rr_consensus:
+    egid: rtrank_consensus-v10.2-a0e4866d
+    display_name: RR-Consensus
+    color: '#27AE60'
+    marker: ^
+    linestyle: '-.'
+
+  rr_consensus_spread2:
+    egid: rtrank_consensus_spread2-v10.2-ba2f2d85
+    display_name: RR-Consensus-2
+    color: '#229954'
+    marker: d
+    linestyle: '-.'
+
+  rr_consensus_spread4:
+    egid: rtrank_consensus_spread4-v10.2-3644c85f
+    display_name: RR-Consensus-4
+    color: '#16A085'
+    marker: s
+    linestyle: '-.'
+
+  rr_consensus_spread6:
+    egid: rtrank_consensus_spread6-v10.2-d62cfc76
+    display_name: RR-Consensus-6
+    color: '#138D75'
+    marker: o
+    linestyle: '-.'
+
+  # === Random Ranking ===
+  rr_randrank_randsize2:
+    egid: rtrank_randrank_randsize2-v10.3-d4c7263b
+    display_name: RR-RandRank
+    color: '#95A5A6'
+    marker: x
+    linestyle: '-'
+
+  rr_randrank_randsize4:
+    egid: rtrank_randrank_randsize4-v10.3-9531db43
+    display_name: RR-RandRank (size4)
+    color: '#7F8C8D'
+    marker: s
+    linestyle: '-.'
+
+  # === Size & Spread Ablations ===
+  rr_agree_spread2:
+    egid: rtrank_agreement_spread2-v10.3-1c362150
+    display_name: RR-Agree (spread2)
+    color: '#1D9A6C'
+    marker: o
+    linestyle: ':'
+
+  rr_agree_spread3:
+    egid: rtrank_agreement_spread3-v10.3-a6a86d5c
+    display_name: RR-Agree (spread3)
+    color: '#1D9A6C'
+    marker: d
+    linestyle: ':'
+
+  rr_agree_spread4:
+    egid: rtrank_agreement_spread4-v10.3-fd38f5cf
+    display_name: RR-Agree (spread4)
+    color: '#1D9A6C'
+    marker: s
+    linestyle: ':'
+
+  # === Tie Handling Strategies ===
+  # (Egids are from before tietotal was default)
+  rr_agree_slight25:
+    egid: rtrank_agreement_tietotal_s25-v10.1-ed6e616e
+    display_name: RR-Agree (tie s25)
+    color: '#A1887F'
+    marker: '*'
+    linestyle: ':'
+
+  rr_agree_slight75:
+    egid: rtrank_agreement_tietotal_s75-v10.1-9071b81e
+    display_name: RR-Agree (tie s75)
+    color: '#BCAAA4'
+    marker: 'X'
+    linestyle: '--'
+
+  # === Noise & Robustness: Partial Shuffle ===
+  rr_agree_partialshuffle25:
+    egid: rtrank_agreement_partialshuffle25-v10.2-745d7d68
+    display_name: RR-Agree (partialshuffle25)
+    color: '#F39C12'
+    marker: ^
+    linestyle: '--'
+
+  rr_agree_partialshuffle50:
+    egid: rtrank_agreement_partialshuffle50-v10.2-e5492837
+    display_name: RR-Agree (partialshuffle50)
+    color: '#2980B9'
+    marker: s
+    linestyle: '-.'
+
+  rr_agree_partialshuffle75:
+    egid: rtrank_agreement_partialshuffle75-v10.2-7cf7fae9
+    display_name: RR-Agree (partialshuffle75)
+    color: '#8E44AD'
+    marker: s
+    linestyle: '-.'
+
+  rr_agree_partialshuffle100:
+    egid: rtrank_agreement_partialshuffle100-v10.2-eae2311b
+    display_name: RR-Agree (partialshuffle100)
+    color: '#8E44AD'
+    marker: d
+    linestyle: '--'
+
+  rr_agree_spread2_partialshuffle25:
+    egid: rtrank_agreement_spread2_partialshuffle25-v10.3-0941d313
+    display_name: RR-Agree (spread2-PS25)
+    color: '#F39C12'
+    marker: ^
+    linestyle: '--'
+
+  rr_agree_spread2_partialshuffle50:
+    egid: rtrank_agreement_spread2_partialshuffle50-v10.3-2db7e312
+    display_name: RR-Agree (spread2-PS50)
+    color: '#16A085'
+    marker: o
+    linestyle: '--'
+
+  rr_agree_spread2_partialshuffle75:
+    egid: rtrank_agreement_spread2_partialshuffle75-v10.3-e7190a10
+    display_name: RR-Agree (spread2-PS75)
+    color: '#8E44AD'
+    marker: s
+    linestyle: '-.'
+
+  rr_agree_spread2_partialshuffle100:
+    egid: rtrank_agreement_spread2_partialshuffle100-v10.3-a3cf4727
+    display_name: RR-Agree (spread2-PS100)
+    color: '#C0392B'
+    marker: d
+    linestyle: ':'
+
+  # === Filter Robustness ===
+  rr_agree_filter25:
+    egid: rtrank_agreement_filter25-v10.5-4cacda53
+    display_name: RR-Agree (filter25)
+    color: '#D32F2F'
+    marker: o
+    linestyle: ':'
+
+  rr_agree_filter50:
+    egid: rtrank_agreement_filter50-v10.5-5126382b
+    display_name: RR-Agree (filter50)
+    color: '#F39C12'
+    marker: ^
+    linestyle: '--'
+
+  rr_agree_filter75:
+    egid: rtrank_agreement_filter75-v10.5-70705f0c
+    display_name: RR-Agree (filter75)
+    color: '#2980B9'
+    marker: d
+    linestyle: ':-'
+
+  rr_agree_filter95:
+    egid: rtrank_agreement_filter95-v10.5-516d4960
+    display_name: RR-Agree (filter95)
+    color: '#8E44AD'
+    marker: s
+    linestyle: '-.'
+
+  # === Response Time Length Stratification (Buckets) ===
+  rr_rt_annolength2_spread2:
+    egid: rtrank_annolength2_spread2-v10.1-c24ee3cd
+    display_name: RR-RT (2 buckets spread2)
+    color: '#3498DB'
+    marker: o
+    linestyle: '--'
+
+  rr_rt_annolength4_spread2:
+    egid: rtrank_annolength4_spread2-v10.1-e5ea2d05
+    display_name: RR-RT (4 buckets spread2)
+    color: '#3498DB'
+    marker: s
+    linestyle: ':'
+
+  rr_rt_annolength8_spread2:
+    egid: rtrank_annolength8_spread2-v10.1-5f173ae5
+    display_name: RR-RT (8 buckets spread2)
+    color: '#3498DB'
+    marker: ^
+    linestyle: '-.'
+
+  rr_rt_annolength16_spread2:
+    egid: rtrank_annolength16_spread2-v10.1-fc32147c
+    display_name: RR-RT (16 buckets spread2)
+    color: '#3498DB'
+    marker: h
+    linestyle: '-'
+
+  rr_rt_annolength32_spread2:
+    egid: rtrank_annolength32_spread2-v10.1-e0bf80a9
+    display_name: RR-RT (32 buckets spread2)
+    color: '#3498DB'
+    marker: p
+    linestyle: '--'
+
+  # === Stated Strength Ablation ===
+  rr_stated_global:
+    egid: rtrank_stated_strength_global-v10.4-5b95755b
+    display_name: RR-Stated (global)
+    color: '#E67E22'
+    marker: o
+    linestyle: ':'
+
+  rr_stated_partialshuffle100:
+    egid: rtrank_stated_strength_partialshuffle100-v10.1-f3e96ecd
+    display_name: RR-Stated (partialshuffle100)
+    color: '#3498DB'
+    marker: s
+    linestyle: '-.'
+
+  # === Hyperparameter Sensitivity: Learning Rate ===
+  bt_lr1em5:
+    egid: bt_lr1e5-v10.1-0afb7e78
+    display_name: BT (lr=1e-5)
+    color: '#C0392B'
+    marker: o
+    linestyle: ':'
+
+  bt_lr2em5:
+    egid: bt_lr2e5-v10.1-40c0405b
+    display_name: BT (lr=2e-5)
+    color: '#A93226'
+    marker: s
+    linestyle: '-.'
+
+  rr_agree_lr1em5:
+    egid: rtrank_agreement_lr_1em5-v10.2-1ed11deb
+    display_name: RR-Agree (lr=1e-5)
+    color: '#148F77'
+    marker: o
+    linestyle: ':'
+
+  rr_agree_lr2em5:
+    egid: rtrank_agreement_lr_2em5-v10.2-6ceb7b5f
+    display_name: RR-Agree (lr=2e-5)
+    color: '#117A65'
+    marker: s
+    linestyle: '-.'
+
+  # === Hyperparameter Sensitivity: Accumulation Steps ===
+  bt_acc2:
+    egid: bt_acc2-v10.1-b78de359
+    display_name: BT (acc=2)
+    color: '#C0392B'
+    marker: o
+    linestyle: ':'
+
+  bt_acc8:
+    egid: bt_acc8-v10.1-756266a1
+    display_name: BT (acc=8)
+    color: '#A93226'
+    marker: s
+    linestyle: '-.'
+
+  rr_agree_gradacc2:
+    egid: rtrank_agreement_acc2-v10.2-5bd313d1
+    display_name: RR-Agree (acc=2)
+    color: '#148F77'
+    marker: o
+    linestyle: ':'
+
+  rr_agree_gradacc8:
+    egid: rtrank_agreement_acc8-v10.2-facbecbb
+    display_name: RR-Agree (acc=8)
+    color: '#117A65'
+    marker: s
+    linestyle: '-.'
+
+  # === Hyperparameter Sensitivity: Gradient Clipping ===
+  bt_clip0p5:
+    egid: bt_clip05-v10.1-b5a25ed2
+    display_name: BT (clip=0.5)
+    color: '#C0392B'
+    marker: o
+    linestyle: ':'
+
+  bt_clip2p0:
+    egid: bt_clip20-v10.1-d368fe6a
+    display_name: BT (clip=2.0)
+    color: '#A93226'
+    marker: s
+    linestyle: '-.'
+
+  rr_agree_gradclip0p5:
+    egid: rtrank_agreement_clip_0_5-v10.2-8403e6e0
+    display_name: RR-Agree (clip=0.5)
+    color: '#148F77'
+    marker: o
+    linestyle: ':'
+
+  rr_agree_gradclip2p0:
+    egid: rtrank_agreement_clip_2_0-v10.2-9e7f2fea
+    display_name: RR-Agree (clip=2.0)
+    color: '#117A65'
+    marker: s
+    linestyle: '-.'
+
+  # === Hyperparameter Sensitivity: Training Epochs ===
+  bt_ep2:
+    egid: bt_ep2-v10.1-ae983be4
+    display_name: BT (epochs=2)
+    color: '#C0392B'
+    marker: o
+    linestyle: ':'
+
+  bt_ep4:
+    egid: bt_ep4-v10.1-70b6b19d
+    display_name: BT (epochs=4)
+    color: '#A93226'
+    marker: s
+    linestyle: '-.'
+
+  rr_agree_ep2:
+    egid: rtrank_agreement_ep2-v10.2-dac2a7b9
+    display_name: RR-Agree (epochs=2)
+    color: '#148F77'
+    marker: o
+    linestyle: ':'
+
+  rr_agree_ep4:
+    egid: rtrank_agreement_ep4-v10.2-500eeacc
+    display_name: RR-Agree (epochs=4)
+    color: '#117A65'
+    marker: s
+    linestyle: '-.'
+
+  # === Hyperparameter Sensitivity: Warmup Ratio ===
+  bt_warmup0p01:
+    egid: bt_warmup01-v10.1-af555059
+    display_name: BT (warmup=0.01)
+    color: '#C0392B'
+    marker: o
+    linestyle: ':'
+
+  bt_warmup0p1:
+    egid: bt_warmup10-v10.1-ef9900ee
+    display_name: BT (warmup=0.1)
+    color: '#A93226'
+    marker: s
+    linestyle: '-.'
+
+  rr_agree_warmup0p01:
+    egid: rtrank_agreement_warmup_0_01-v10.2-e82c87b5
+    display_name: RR-Agree (warmup=0.01)
+    color: '#148F77'
+    marker: o
+    linestyle: ':'
+
+  rr_agree_warmup0p1:
+    egid: rtrank_agreement_warmup_0_1-v10.2-2af0b919
+    display_name: RR-Agree (warmup=0.1)
+    color: '#117A65'
+    marker: s
+    linestyle: '-.'
+
+  # === Hyperparameter Sensitivity: Weight Decay ===
+  bt_wd0p001:
+    egid: bt_wd001-v10.1-cf9e1e23
+    display_name: BT (wd=0.001)
+    color: '#C62828'
+    marker: s
+    linestyle: ':'
+
+  rr_agree_weightdecay0p001:
+    egid: rtrank_agreement_wd_0_001-v10.2-d5e608ec
+    display_name: RR-Agree (wd=0.001)
+    color: '#1B5E20'
+    marker: s
+    linestyle: ':'
+
+  # === Validation: Batching Infrastructure ===
+  rr_agree_bt:
+    egid: rtrank_agreement_bt-v10.2-6fc2178c
+    display_name: RR-Agree-BT
+    color: '#95A5A6'
+    marker: s
+    linestyle: ':'

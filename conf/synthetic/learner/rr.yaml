@@ -1,0 +1,10 @@
+defaults:
+  - base
+  - _self_
+
+learner_type: "rr"
+use_strata: true
+unreduce: false
+misclassification_penalty: false
+worth_transform: "exp"
+mean_reduce: true

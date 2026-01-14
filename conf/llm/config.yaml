@@ -13,7 +13,7 @@ version: 3
 dry_run: false
 
 wandb:
-  project_name: llm-rt-multipref-v3
+  project_name: rr-llm
 
 # Hydra configuration
 hydra:

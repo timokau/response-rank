@@ -69,7 +69,7 @@ class ResponseRankRewardTrainer(RewardTrainer):
         optimizers,
         preprocess_logits_for_metrics,
         peft_config,
-        rr_loss_weight: float,
+        use_rr_loss: bool,
         sampler,
         divide_by_len: bool,
         accumulation_aware_scaling: bool,
@@ -79,7 +79,7 @@ class ResponseRankRewardTrainer(RewardTrainer):
         self.rng = rng
 
         # Store RR parameters
-        self.rr_loss_weight = rr_loss_weight
+        self.use_rr_loss = use_rr_loss
         self.sampler = sampler
         self.divide_by_len = divide_by_len
         self.accumulation_aware_scaling = accumulation_aware_scaling
@@ -133,10 +133,10 @@ class ResponseRankRewardTrainer(RewardTrainer):
         self._eval_without_rr = False
 
         missing_train_cols = self._check_for_missing_rr_columns(
-            train_dataset, self.rr_loss_weight
+            train_dataset, self.use_rr_loss
         )
         missing_eval_cols = self._check_for_missing_rr_columns(
-            eval_dataset, self.rr_loss_weight
+            eval_dataset, self.use_rr_loss
         )
         if len(missing_train_cols) > 0:
             raise AssertionError(
@@ -148,8 +148,8 @@ class ResponseRankRewardTrainer(RewardTrainer):
                 f"Missing rr columns in eval dataset: {missing_eval_cols}. RR loss will be skipped during evaluation."
             )
 
-    def _check_for_missing_rr_columns(self, dataset, rr_loss_weight):
-        if rr_loss_weight <= 0:
+    def _check_for_missing_rr_columns(self, dataset, use_rr_loss):
+        if not use_rr_loss:
             return []
 
         missing_columns = []
@@ -210,9 +210,7 @@ class ResponseRankRewardTrainer(RewardTrainer):
         if self._in_evaluation:
             self._eval_pref_losses.append(pref_loss.detach().cpu().item())
 
-        if self.rr_loss_weight > 0 and not (
-            self._in_evaluation and self._eval_without_rr
-        ):
+        if self.use_rr_loss and not (self._in_evaluation and self._eval_without_rr):
             ranks = inputs["rank"].to(utility_diff.device)
             partition_ids = inputs["partition_id"].to(utility_diff.device)
             rr_loss_sum = compute_responserank_loss_sum(
@@ -229,20 +227,17 @@ class ResponseRankRewardTrainer(RewardTrainer):
                 rr_loss = rr_loss_sum
             if self._in_evaluation:
                 self._eval_responserank_losses.append(rr_loss.detach().cpu().item())
-            total_loss = (
-                1 - self.rr_loss_weight
-            ) * pref_loss + self.rr_loss_weight * rr_loss
+            loss = rr_loss
         else:
-            rr_loss = None
-            total_loss = pref_loss
+            loss = pref_loss
 
         if return_outputs:
             outputs = {
                 "rewards_chosen": rewards_chosen,
                 "rewards_rejected": rewards_rejected,
             }
-            return total_loss, outputs
-        return total_loss
+            return loss, outputs
+        return loss
 
     def get_train_dataloader(self):
         """

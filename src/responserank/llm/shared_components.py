@@ -106,7 +106,7 @@ def train_reward_model(
         optimizers=(None, None),
         preprocess_logits_for_metrics=None,
         peft_config=None,
-        rr_loss_weight=args.experiment.rr_loss_weight,
+        use_rr_loss=args.experiment.use_rr_loss,
         sampler=sampler,
         divide_by_len=args.experiment.divide_by_len,
         accumulation_aware_scaling=args.experiment.accumulation_aware_scaling,

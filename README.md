@@ -1,6 +1,6 @@
 # ResponseRank: Data-Efficient Reward Modeling through Preference Strength Learning
 
-This repository contains the implementation of the [ResponseRank](https://openreview.net/pdf?id=3JlBQRvod7), a novel approach for preference learning that leverages strength information to improve utility estimation. We compare the method to a loss based on the standard Bradley-Terry model that only considers choice outcomes.
+This repository contains the implementation of [ResponseRank](https://openreview.net/pdf?id=3JlBQRvod7), a novel approach for preference learning that leverages strength information to improve utility estimation. We compare the method to a loss based on the standard Bradley-Terry model that only considers choice outcomes.
 
 ## Installation
 

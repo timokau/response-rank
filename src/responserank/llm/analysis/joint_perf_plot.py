@@ -1,5 +1,4 @@
 import random
-import re
 from typing import Any, Dict, List, Literal, Optional, Sequence, Tuple
 
 import matplotlib.pyplot as plt

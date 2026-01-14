@@ -18,4 +18,4 @@ wandb:
 # Hydra configuration
 hydra:
   run:
-    dir: ./outputs/llm_rt/${now:%Y-%m-%d}/${now:%H-%M-%S}-${hydra.job.override_dirname}
+    dir: ./outputs/rr_llm/${now:%Y-%m-%d}/${now:%H-%M-%S}-${hydra.job.override_dirname}

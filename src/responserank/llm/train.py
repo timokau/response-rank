@@ -50,7 +50,7 @@ def run_experiment(cfg: DictConfig):
     # Set seed for reproducibility and get RNGs
     main_rng, dataset_rng = set_seed(cfg.seed)
 
-    wandb_project = f"{cfg.wandb.project_base}-multipref-v{cfg.version}"
+    wandb_project = cfg.wandb.project_name
 
     # Compute a hash that identifies this experimental condition (excluding seed and fraction)
     hash_relevant_config = OmegaConf.to_container(cfg, resolve=True)

@@ -16,11 +16,16 @@ def find_runs_with_name(project: str, run_name: str) -> List[Run]:
         run_name: Name of the run to check for
 
     Returns:
-        List of Run objects with the given name
+        List of Run objects with the given name, or empty list if project doesn't exist
     """
     api = wandb.Api()
-    runs = api.runs(project, filters={"display_name": run_name})
-    return list(runs)
+    try:
+        runs = api.runs(project, filters={"display_name": run_name})
+        return list(runs)
+    except ValueError as e:
+        if "Could not find project" in str(e):
+            return []
+        raise
 
 
 def wandb_init_claim(

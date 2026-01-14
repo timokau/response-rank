@@ -34,7 +34,7 @@ def train_reward_model(
     run_name,
     sampler,
 ):
-    """Train the RT-aware reward model"""
+    """Train the reward model with RR loss"""
     print(f"Loading model: {args.experiment.model_name}")
     model = AutoModelForSequenceClassification.from_pretrained(
         args.experiment.model_name,
@@ -106,7 +106,7 @@ def train_reward_model(
         optimizers=(None, None),
         preprocess_logits_for_metrics=None,
         peft_config=None,
-        rt_loss_weight=args.experiment.rt_loss_weight,
+        rr_loss_weight=args.experiment.rr_loss_weight,
         sampler=sampler,
         divide_by_len=args.experiment.divide_by_len,
         accumulation_aware_scaling=args.experiment.accumulation_aware_scaling,

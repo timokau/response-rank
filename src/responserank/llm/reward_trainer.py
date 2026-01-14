@@ -69,7 +69,7 @@ class ResponseRankRewardTrainer(RewardTrainer):
         optimizers,
         preprocess_logits_for_metrics,
         peft_config,
-        rt_loss_weight: float,
+        rr_loss_weight: float,
         sampler,
         divide_by_len: bool,
         accumulation_aware_scaling: bool,
@@ -78,8 +78,8 @@ class ResponseRankRewardTrainer(RewardTrainer):
     ):
         self.rng = rng
 
-        # Store RT parameters
-        self.rt_loss_weight = rt_loss_weight
+        # Store RR parameters
+        self.rr_loss_weight = rr_loss_weight
         self.sampler = sampler
         self.divide_by_len = divide_by_len
         self.accumulation_aware_scaling = accumulation_aware_scaling
@@ -130,26 +130,26 @@ class ResponseRankRewardTrainer(RewardTrainer):
         self._eval_pref_losses = []
         self._eval_responserank_losses = []
         self._in_evaluation = False
-        self._eval_without_rt = False
+        self._eval_without_rr = False
 
-        missing_train_cols = self._check_for_missing_rt_columns(
-            train_dataset, self.rt_loss_weight
+        missing_train_cols = self._check_for_missing_rr_columns(
+            train_dataset, self.rr_loss_weight
         )
-        missing_eval_cols = self._check_for_missing_rt_columns(
-            eval_dataset, self.rt_loss_weight
+        missing_eval_cols = self._check_for_missing_rr_columns(
+            eval_dataset, self.rr_loss_weight
         )
         if len(missing_train_cols) > 0:
             raise AssertionError(
                 f"Missing required columns in train dataset: {missing_train_cols}"
             )
         if len(missing_eval_cols) > 0:
-            self._eval_without_rt = True
+            self._eval_without_rr = True
             logger.info(
-                f"Missing rt columns in eval dataset: {missing_eval_cols}. RT loss will be skipped during evaluation."
+                f"Missing rr columns in eval dataset: {missing_eval_cols}. RR loss will be skipped during evaluation."
             )
 
-    def _check_for_missing_rt_columns(self, dataset, rt_loss_weight):
-        if rt_loss_weight <= 0:
+    def _check_for_missing_rr_columns(self, dataset, rr_loss_weight):
+        if rr_loss_weight <= 0:
             return []
 
         missing_columns = []
@@ -210,30 +210,30 @@ class ResponseRankRewardTrainer(RewardTrainer):
         if self._in_evaluation:
             self._eval_pref_losses.append(pref_loss.detach().cpu().item())
 
-        if self.rt_loss_weight > 0 and not (
-            self._in_evaluation and self._eval_without_rt
+        if self.rr_loss_weight > 0 and not (
+            self._in_evaluation and self._eval_without_rr
         ):
             ranks = inputs["rank"].to(utility_diff.device)
             partition_ids = inputs["partition_id"].to(utility_diff.device)
-            rt_loss_sum = compute_responserank_loss_sum(
+            rr_loss_sum = compute_responserank_loss_sum(
                 utility_diff, ranks, partition_ids, allow_ties=self.allow_ties
             )
             if self.divide_by_len:
                 if self.accumulation_aware_scaling and num_items_in_batch is not None:
                     if torch.is_tensor(num_items_in_batch):
-                        num_items_in_batch = num_items_in_batch.to(rt_loss_sum.device)
-                    rt_loss = rt_loss_sum / num_items_in_batch
+                        num_items_in_batch = num_items_in_batch.to(rr_loss_sum.device)
+                    rr_loss = rr_loss_sum / num_items_in_batch
                 else:
-                    rt_loss = rt_loss_sum / len(utility_diff)
+                    rr_loss = rr_loss_sum / len(utility_diff)
             else:
-                rt_loss = rt_loss_sum
+                rr_loss = rr_loss_sum
             if self._in_evaluation:
-                self._eval_responserank_losses.append(rt_loss.detach().cpu().item())
+                self._eval_responserank_losses.append(rr_loss.detach().cpu().item())
             total_loss = (
-                1 - self.rt_loss_weight
-            ) * pref_loss + self.rt_loss_weight * rt_loss
+                1 - self.rr_loss_weight
+            ) * pref_loss + self.rr_loss_weight * rr_loss
         else:
-            rt_loss = None
+            rr_loss = None
             total_loss = pref_loss
 
         if return_outputs:
@@ -253,7 +253,7 @@ class ResponseRankRewardTrainer(RewardTrainer):
             raise ValueError("train_dataset is required")
 
         if self.sampler is None:
-            raise ValueError("sampler must be provided for all RT loss types")
+            raise ValueError("sampler must be provided for all RR loss types")
 
         sampler_seed = self.rng.randint(0, 2**32 - 1)
 

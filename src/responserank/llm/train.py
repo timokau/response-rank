@@ -46,8 +46,8 @@ def termination_handler(signum, frame):
 def run_experiment(cfg: DictConfig):
     if cfg.experiment.fraction <= 0.0 or cfg.experiment.fraction > 1.0:
         raise ValueError("Fraction must be between 0.0 (exclusive) and 1.0 (inclusive)")
-    if cfg.experiment.rt_loss_weight < 0.0 or cfg.experiment.rt_loss_weight > 1.0:
-        raise ValueError("RT loss weight must be between 0.0 and 1.0 (inclusive)")
+    if cfg.experiment.rr_loss_weight < 0.0 or cfg.experiment.rr_loss_weight > 1.0:
+        raise ValueError("RR loss weight must be between 0.0 and 1.0 (inclusive)")
 
     # Set seed for reproducibility and get RNGs
     main_rng, dataset_rng = set_seed(cfg.seed)

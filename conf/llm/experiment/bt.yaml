@@ -9,4 +9,4 @@ defaults:
   - _self_
 
 baseline: true
-rt_loss_weight: 0.0
+rr_loss_weight: 0.0

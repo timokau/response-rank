@@ -5,4 +5,4 @@ defaults:
   - rr_agree
   - _self_
 
-rt_loss_weight: 0.0
+rr_loss_weight: 0.0

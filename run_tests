@@ -5,6 +5,6 @@ set -e
 
 cd "$(dirname "$0")"
 echo "Running tests..."
-pytest "$@"
+python -m pytest "$@"
 # Can assume success because of set -e
 echo "All tests passed successfully!"

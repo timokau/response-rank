@@ -18,10 +18,10 @@ done
 echo "Running linters..."
 if [ "$fix_mode" = true ]; then
   echo "Fixing issues automatically..."
-  ruff format . && ruff check --fix --unsafe-fixes .
+  python -m ruff format . && python -m ruff check --fix --unsafe-fixes .
 else
   echo "Checking format and code style..."
-  ruff format --diff . ; format_code=$?
-  ruff check . ; check_code=$?
+  python -m ruff format --diff . ; format_code=$?
+  python -m ruff check . ; check_code=$?
   exit $(( format_code || check_code ))
 fi

@@ -59,7 +59,7 @@ rewardbenchv1_filter_max_len: false
 
 defaults:
   - dataset: multipref
-  - stratifier: std_max2
+  - stratifier: global
   - train_processor: real_rt
   - test_processor: no_rank
   - train_filter: noop

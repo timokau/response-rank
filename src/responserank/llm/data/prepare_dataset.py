@@ -556,7 +556,7 @@ def prepare_datasets(
     )
 
     print(
-        f"Pre-aggregation stats: {total_ties}/{total_annotations} ties ({tie_fraction:.3f}), avg {avg_ties_per_comparison:.2f} ties/comparison"
+        f"Pre-aggregation stats: {total_ties}/{total_annotations} ties ({tie_fraction:.3f}), avg {avg_ties_per_comparison:.2f} tie annotations per comparison"
     )
 
     print("Splitting into train and test comparison sets...")
